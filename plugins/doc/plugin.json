@@ -1,0 +1,19 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "doc",
+  "version": "1.0.0",
+  "description": "Read, create, and edit Word (.docx) documents with python-docx, and check the layout by rendering pages.",
+  "author": {
+    "name": "OpenAI"
+  },
+  "homepage": "https://github.com/openai/skills/tree/45d05d75363abf13f99d09e899d61e07b8010685/skills/.curated/doc",
+  "repository": "https://github.com/openai/skills/tree/45d05d75363abf13f99d09e899d61e07b8010685/skills/.curated/doc",
+  "license": "Apache-2.0",
+  "extensions": {
+    "com.youmind": {
+      "displayName": "Word",
+      "category": "Documents",
+      "icon": "./com.youmind/icon.png"
+    }
+  }
+}

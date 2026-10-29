@@ -1,0 +1,19 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "supabase",
+  "version": "1.0.0",
+  "description": "Supabase skills and the Supabase MCP server for project management, database work, auth, storage, and Postgres best practices.",
+  "author": {
+    "name": "Supabase"
+  },
+  "homepage": "https://supabase.com/docs/guides/getting-started/mcp",
+  "repository": "https://github.com/supabase-community/supabase-plugin/tree/016bf5b36670f7ad189ca90223513bd10406392d",
+  "license": "MIT",
+  "extensions": {
+    "com.youmind": {
+      "displayName": "Supabase",
+      "category": "Developer tools",
+      "icon": "./com.youmind/icon.svg"
+    }
+  }
+}

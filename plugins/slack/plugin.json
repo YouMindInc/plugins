@@ -1,0 +1,19 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "slack",
+  "version": "1.0.0",
+  "description": "Slack AI tools for users and developers: interact with your workspace via the Slack MCP server and use skills to develop Slack apps.",
+  "author": {
+    "name": "Slack"
+  },
+  "homepage": "https://docs.slack.dev/ai/slack-skills-plugin",
+  "repository": "https://github.com/slackapi/slack-mcp-plugin/tree/bc8345a60de677ad06d1d6a885953ae5320fbc44",
+  "license": "MIT",
+  "extensions": {
+    "com.youmind": {
+      "displayName": "Slack",
+      "category": "Productivity",
+      "icon": "./com.youmind/icon.png"
+    }
+  }
+}

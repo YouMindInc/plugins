@@ -1,0 +1,19 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "pdf",
+  "version": "1.0.0",
+  "description": "Read, create, and review PDF files, and check the layout by rendering pages with Poppler.",
+  "author": {
+    "name": "OpenAI"
+  },
+  "homepage": "https://github.com/openai/skills/tree/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/pdf",
+  "repository": "https://github.com/openai/skills/tree/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/pdf",
+  "license": "Apache-2.0",
+  "extensions": {
+    "com.youmind": {
+      "displayName": "PDF",
+      "category": "Documents",
+      "icon": "./com.youmind/icon.png"
+    }
+  }
+}

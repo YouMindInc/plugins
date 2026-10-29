@@ -1,0 +1,19 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "notion",
+  "version": "1.0.0",
+  "description": "Notion skills and the Notion MCP server: search and edit your workspace, capture knowledge, prepare meetings, research topics, and turn specs into tasks.",
+  "author": {
+    "name": "Notion"
+  },
+  "homepage": "https://developers.notion.com/docs/mcp",
+  "repository": "https://github.com/makenotion/claude-code-notion-plugin/tree/9847f2aa1a15f25df35ed1fb7b4557dbb60cd651",
+  "license": "MIT",
+  "extensions": {
+    "com.youmind": {
+      "displayName": "Notion",
+      "category": "Productivity",
+      "icon": "./com.youmind/icon.png"
+    }
+  }
+}

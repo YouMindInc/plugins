@@ -1,0 +1,17 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "huggingface",
+  "version": "1.0.0",
+  "description": "Search models, datasets, Spaces, and papers, and run Spaces tools on the Hugging Face Hub through the Hugging Face MCP server.",
+  "author": {
+    "name": "Hugging Face"
+  },
+  "homepage": "https://huggingface.co/docs/hub/hf-mcp-server",
+  "extensions": {
+    "com.youmind": {
+      "displayName": "Hugging Face",
+      "category": "Developer tools",
+      "icon": "./com.youmind/icon.svg"
+    }
+  }
+}

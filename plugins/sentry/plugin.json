@@ -1,0 +1,19 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "sentry",
+  "version": "1.0.0",
+  "description": "Debug production issues with the Sentry MCP server, and use Sentry's skills to set up the SDK, instrument code, create alerts, and fix stack traces.",
+  "author": {
+    "name": "Sentry"
+  },
+  "homepage": "https://docs.sentry.io/product/sentry-mcp/",
+  "repository": "https://github.com/getsentry/plugin-claude/tree/1b082a07d1a8149cf8a50596dd609fd1edf8f7df",
+  "license": "MIT",
+  "extensions": {
+    "com.youmind": {
+      "displayName": "Sentry",
+      "category": "Developer tools",
+      "icon": "./com.youmind/icon.svg"
+    }
+  }
+}

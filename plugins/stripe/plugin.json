@@ -1,0 +1,19 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "stripe",
+  "version": "1.0.0",
+  "description": "Stripe agent plugin with skills for Stripe integrations including best practices, API and SDK upgrade guidance, and a remote MCP server configuration.",
+  "author": {
+    "name": "Stripe"
+  },
+  "homepage": "https://docs.stripe.com/mcp",
+  "repository": "https://github.com/stripe/ai/tree/d9c9287ae870688bb3703b50e59ef1dd3692ffcb/providers/agent-plugins/plugin",
+  "license": "MIT",
+  "extensions": {
+    "com.youmind": {
+      "displayName": "Stripe",
+      "category": "Developer tools",
+      "icon": "./com.youmind/icon.svg"
+    }
+  }
+}

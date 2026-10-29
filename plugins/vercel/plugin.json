@@ -1,0 +1,17 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "vercel",
+  "version": "1.0.0",
+  "description": "Search Vercel docs, inspect projects and deployments, read logs, and deploy through the Vercel MCP server.",
+  "author": {
+    "name": "Vercel"
+  },
+  "homepage": "https://vercel.com/docs/agent-resources/vercel-mcp",
+  "extensions": {
+    "com.youmind": {
+      "displayName": "Vercel",
+      "category": "Developer tools",
+      "icon": "./com.youmind/icon.png"
+    }
+  }
+}

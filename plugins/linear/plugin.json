@@ -1,0 +1,17 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "linear",
+  "version": "1.0.0",
+  "description": "Find, create, and update Linear issues, projects, and comments through the Linear MCP server.",
+  "author": {
+    "name": "Linear"
+  },
+  "homepage": "https://linear.app/docs/mcp",
+  "extensions": {
+    "com.youmind": {
+      "displayName": "Linear",
+      "category": "Productivity",
+      "icon": "./com.youmind/icon.svg"
+    }
+  }
+}

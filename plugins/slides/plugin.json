@@ -1,0 +1,19 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "slides",
+  "version": "1.0.0",
+  "description": "Create and edit PowerPoint (.pptx) slide decks with PptxGenJS, and check the layout by rendering slides.",
+  "author": {
+    "name": "OpenAI"
+  },
+  "homepage": "https://github.com/openai/skills/tree/e6afb0d74cc75d220df2faf3dd6c635c2dc6a108/skills/.curated/slides",
+  "repository": "https://github.com/openai/skills/tree/e6afb0d74cc75d220df2faf3dd6c635c2dc6a108/skills/.curated/slides",
+  "license": "Apache-2.0",
+  "extensions": {
+    "com.youmind": {
+      "displayName": "Slides",
+      "category": "Documents",
+      "icon": "./com.youmind/icon.png"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "canva",
+  "version": "1.0.0",
+  "description": "Create, edit, review, resize, and brand-check Canva designs with the Canva MCP server.",
+  "author": {
+    "name": "Canva"
+  },
+  "homepage": "https://www.canva.com/developers/",
+  "repository": "https://github.com/canva-sdks/canva-skills/tree/906e8e0b0808e7146b998a48179abef281be57ca/plugins/canva",
+  "license": "Apache-2.0",
+  "extensions": {
+    "com.youmind": {
+      "displayName": "Canva",
+      "category": "Design",
+      "icon": "./com.youmind/icon.svg"
+    }
+  }
+}
