@@ -1,0 +1,17 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "gmail",
+  "version": "1.0.0",
+  "description": "Search and read Gmail threads, manage labels, and draft replies through the Gmail MCP server.",
+  "author": {
+    "name": "Google"
+  },
+  "homepage": "https://developers.google.com/workspace/gmail/api/reference/mcp",
+  "extensions": {
+    "com.youmind": {
+      "displayName": "Gmail",
+      "category": "Productivity",
+      "icon": "./com.youmind/icon.svg"
+    }
+  }
+}
