@@ -10,6 +10,7 @@ A plugin has an MCP server, skills, or both. A plugin has both only when the ven
 | --- | --- | --- | --- |
 | `canva` | `https://mcp.canva.com/mcp` | 7 | [canva-sdks/canva-skills](https://github.com/canva-sdks/canva-skills) |
 | `gmail` | `https://gmailmcp.googleapis.com/mcp/v1` | | [Gmail MCP reference](https://developers.google.com/workspace/gmail/api/reference/mcp) |
+| `github` | `https://api.githubcopilot.com/mcp/` | | [GitHub MCP server](https://github.com/github/github-mcp-server) |
 | `huggingface` | `https://huggingface.co/mcp?login` | | [Hugging Face MCP docs](https://huggingface.co/docs/hub/hf-mcp-server) |
 | `linear` | `https://mcp.linear.app/mcp` | | [Linear MCP docs](https://linear.app/docs/mcp) |
 | `notion` | `https://mcp.notion.com/mcp` | 4 | [makenotion/claude-code-notion-plugin](https://github.com/makenotion/claude-code-notion-plugin) |
@@ -23,7 +24,7 @@ A plugin has an MCP server, skills, or both. A plugin has both only when the ven
 | `slides` | | PowerPoint (`.pptx`) | [openai/skills](https://github.com/openai/skills) |
 | `spreadsheet` | | Excel (`.xlsx`), CSV, TSV | [openai/skills](https://github.com/openai/skills) |
 
-Every MCP server above is the vendor's hosted server. Users sign in with their own account through OAuth. Each server supports dynamic client registration, except Slack and Gmail, whose OAuth clients YouAgent provides. The `repository` field of each `plugin.json` links the upstream commit the files came from.
+Every MCP server above is the vendor's hosted server. Users sign in with their own account through OAuth. Each server supports dynamic client registration, except GitHub, Slack, and Gmail, whose OAuth clients YouAgent provides. The `repository` field of each `plugin.json` links the upstream commit the files came from.
 
 ## Layout
 

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "github",
+  "version": "1.0.0",
+  "description": "Search repositories, read and manage code, issues, and pull requests through the GitHub MCP server.",
+  "author": {
+    "name": "GitHub"
+  },
+  "homepage": "https://github.com/github/github-mcp-server",
+  "extensions": {
+    "com.youmind": {
+      "displayName": "GitHub",
+      "category": "Developer tools",
+      "icon": "./com.youmind/icon.svg"
+    }
+  }
+}
