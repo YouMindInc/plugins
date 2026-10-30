@@ -8,11 +8,9 @@ A plugin has an MCP server, skills, or both. A plugin has both only when the ven
 
 | Plugin | MCP server | Skills | Source |
 | --- | --- | --- | --- |
-| `atlassian` | `https://mcp.atlassian.com/v2/mcp` | 6 | [atlassian/atlassian-mcp-server](https://github.com/atlassian/atlassian-mcp-server) |
 | `canva` | `https://mcp.canva.com/mcp` | 7 | [canva-sdks/canva-skills](https://github.com/canva-sdks/canva-skills) |
 | `huggingface` | `https://huggingface.co/mcp?login` | | [Hugging Face MCP docs](https://huggingface.co/docs/hub/hf-mcp-server) |
 | `linear` | `https://mcp.linear.app/mcp` | | [Linear MCP docs](https://linear.app/docs/mcp) |
-| `neon` | `https://mcp.neon.tech/mcp` | 9 | [neondatabase/agent-skills](https://github.com/neondatabase/agent-skills) |
 | `notion` | `https://mcp.notion.com/mcp` | 4 | [makenotion/claude-code-notion-plugin](https://github.com/makenotion/claude-code-notion-plugin) |
 | `sentry` | `https://mcp.sentry.dev/mcp` | 8 | [getsentry/plugin-claude](https://github.com/getsentry/plugin-claude) |
 | `slack` | `https://mcp.slack.com/mcp` | 9 | [slackapi/slack-mcp-plugin](https://github.com/slackapi/slack-mcp-plugin) |
