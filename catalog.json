@@ -1,0 +1,726 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "repo": "YouMindInc/plugins",
+    "commit": "23ba144c50d7a3fb0e9f958cb337c5a321aa5c06"
+  },
+  "plugins": {
+    "canva": {
+      "latest": "1.0.0",
+      "releases": {
+        "1.0.0": {
+          "commit": "b0af0fddba062ad022e5a444c5dafbd75bd40edc",
+          "path": "plugins/canva",
+          "package": {
+            "key": "youagent/plugin-releases/canva/1.0.0/aa3ca1342452202502ec1e2bd58913d164b3e72c6481b36557c1a62c8dce6737.tar.gz",
+            "sha256": "aa3ca1342452202502ec1e2bd58913d164b3e72c6481b36557c1a62c8dce6737",
+            "bytes": 20788,
+            "tarSha256": "3e43038b81bfe113f476ba91e92959d3113a7483cd1303a060878ee4987f921b"
+          },
+          "display": {
+            "name": "Canva",
+            "description": "Create, edit, review, resize, and brand-check Canva designs with the Canva MCP server.",
+            "category": "Design",
+            "icon": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTMyIDY0QzQ5LjY3MzEgNjQgNjQgNDkuNjczMSA2NCAzMkM2NCAxNC4zMjY5IDQ5LjY3MzEgMCAzMiAwQzE0LjMyNjkgMCAwIDE0LjMyNjkgMCAzMkMwIDQ5LjY3MzEgMTQuMzI2OSA2NCAzMiA2NFoiIGZpbGw9IiM3RDJBRTciLz4KPHBhdGggZD0iTTMyIDY0QzQ5LjY3MzEgNjQgNjQgNDkuNjczMSA2NCAzMkM2NCAxNC4zMjY5IDQ5LjY3MzEgMCAzMiAwQzE0LjMyNjkgMCAwIDE0LjMyNjkgMCAzMkMwIDQ5LjY3MzEgMTQuMzI2OSA2NCAzMiA2NFoiIGZpbGw9InVybCgjcGFpbnQwX3JhZGlhbF80XzU3KSIvPgo8cGF0aCBkPSJNMzIgNjRDNDkuNjczMSA2NCA2NCA0OS42NzMxIDY0IDMyQzY0IDE0LjMyNjkgNDkuNjczMSAwIDMyIDBDMTQuMzI2OSAwIDAgMTQuMzI2OSAwIDMyQzAgNDkuNjczMSAxNC4zMjY5IDY0IDMyIDY0WiIgZmlsbD0idXJsKCNwYWludDFfcmFkaWFsXzRfNTcpIi8+CjxwYXRoIGQ9Ik0zMiA2NEM0OS42NzMxIDY0IDY0IDQ5LjY3MzEgNjQgMzJDNjQgMTQuMzI2OSA0OS42NzMxIDAgMzIgMEMxNC4zMjY5IDAgMCAxNC4zMjY5IDAgMzJDMCA0OS42NzMxIDE0LjMyNjkgNjQgMzIgNjRaIiBmaWxsPSJ1cmwoI3BhaW50Ml9yYWRpYWxfNF81NykiLz4KPHBhdGggZD0iTTMyIDY0QzQ5LjY3MzEgNjQgNjQgNDkuNjczMSA2NCAzMkM2NCAxNC4zMjY5IDQ5LjY3MzEgMCAzMiAwQzE0LjMyNjkgMCAwIDE0LjMyNjkgMCAzMkMwIDQ5LjY3MzEgMTQuMzI2OSA2NCAzMiA2NFoiIGZpbGw9InVybCgjcGFpbnQzX3JhZGlhbF80XzU3KSIvPgo8cGF0aCBkPSJNNTcuMjQ5NCAzMy4zODg5QzU3LjE2NDEgMzMuMzg4OSA1Ny4wODgzIDMzLjQ0NjEgNTcuMDUwNSAzMy41NTk3QzU2LjUzNTQgMzUuMDI1OCA1NS44NDAyIDM1LjkwMDggNTUuMjY4MyAzNS45MDA4QzU0LjkzOTcgMzUuOTAwOCA1NC44MDcgMzUuNTM0NSA1NC44MDcgMzQuOTU5M0M1NC44MDcgMzMuNTI1IDU1LjY2OTcgMzAuNDc5MSA1Ni4wOTkyIDI5LjA4ODlDNTYuMTUgMjguOTQ1NiA1Ni4xNzg4IDI4Ljc5NTQgNTYuMTg0OCAyOC42NDM0QzU2LjE4NDggMjguMjM5IDU1Ljk2MzUgMjguMDM5OSA1NS40MTcgMjguMDM5OUM1NC44NzAyIDI4LjAzOTkgNTQuMTkxIDI4LjI3MzcgNTMuNTc3OSAyOS4zNTQzQzUzLjM2MyAyOC40MDAxIDUyLjcxODYgMjcuOTgzIDUxLjgxODEgMjcuOTgzQzUwLjc3ODYgMjcuOTgzIDQ5Ljc3MzggMjguNjUyOSA0OC45NDU5IDI5LjczNjZDNDguMTE4MyAzMC44MjAzIDQ3LjE0ODMgMzEuMTgwNSA0Ni40MTUyIDMxLjAwMzZDNDYuOTQyNyAyOS43MTc3IDQ3LjEzNTYgMjguNzU0IDQ3LjEzNTYgMjguMDM5OUM0Ny4xMzU2IDI2LjkxODIgNDYuNTgyNyAyNi4yNDIxIDQ1LjY4ODYgMjYuMjQyMUM0NC4zMjY1IDI2LjI0MjEgNDMuNTQzIDI3LjU0MDcgNDMuNTQzIDI4LjkwNTZDNDMuNTQzIDI5Ljk2MDkgNDQuMDIwMyAzMS4wNDc4IDQ1LjA3NTYgMzEuNTc1NUM0NC4xOTM4IDMzLjU2OTEgNDIuOTA0OSAzNS4zNzM0IDQyLjQxNTIgMzUuMzczNEM0MS43ODMyIDM1LjM3MzQgNDEuNTk2NiAzMi4yODMyIDQxLjYzNDcgMzAuMDcxNUM0MS42NTM1IDI4LjgwNDUgNDEuNzYxMSAyOC43MzgyIDQxLjc2MTEgMjguMzUyN0M0MS43NjExIDI4LjEzNDcgNDEuNjE1NyAyNy45ODMgNDEuMDQzOCAyNy45ODNDMzkuNzA3NCAyNy45ODMgMzkuMjkwMyAyOS4xMTczIDM5LjIzMDEgMzAuNDE5MUMzOS4yMDcxIDMwLjkxMjYgMzkuMTI5OSAzMS40MDIyIDM4Ljk5OTUgMzEuODc4OEMzOC40MzczIDMzLjg3NTYgMzcuMjg3MSAzNS4zODkxIDM2LjUzNTEgMzUuMzg5MUMzNi4xODQ0IDM1LjM4OTEgMzYuMDkyOCAzNS4wMzg1IDM2LjA5MjggMzQuNTgzNkMzNi4wOTI4IDMzLjE0OSAzNi44OTU0IDMxLjM1MTEgMzYuODk1NCAyOS44MjE5QzM2Ljg5NTQgMjguNjkzOSAzNi40MDI0IDI3Ljk4MyAzNS40NzAxIDI3Ljk4M0MzNC4zNzcxIDI3Ljk4MyAzMi45MjY4IDI5LjI4NzkgMzEuNTU1NSAzMS43MjcxQzMyLjAwNzQgMjkuODU5OCAzMi4xOTA2IDI4LjA0OTQgMzAuODU3MyAyOC4wNDk0QzMwLjU2NzEgMjguMDUzOCAzMC4yODIyIDI4LjEyNzUgMzAuMDI2MyAyOC4yNjQyQzI5Ljg0MyAyOC4zNTkgMjkuNzQ1MSAyOC41Mjk2IDI5Ljc1NzcgMjguNzE5MkMyOS44ODQxIDMwLjcxMjkgMjguMTUyNiAzNS44MDkzIDI2LjUwOTYgMzUuODA5M0MyNi4yMDk1IDM1LjgwOTMgMjYuMDY3MyAzNS40ODcgMjYuMDY3MyAzNC45NjI2QzI2LjA2NzMgMzMuNTI4IDI2LjkyMzUgMzAuNDg4NiAyNy4zNTMzIDI5LjA5NTJDMjcuNDA1NiAyOC45NDM2IDI3LjQzNDQgMjguNzg0OCAyNy40Mzg2IDI4LjYyNDRDMjcuNDM4NiAyOC4yNDUzIDI3LjIwNDcgMjguMDQ5NCAyNi42NzA4IDI4LjA0OTRDMjYuMDgzMSAyOC4wNDk0IDI1LjQ0OCAyOC4yNzM3IDI0LjgzMTkgMjkuMzU0M0MyNC42MTcgMjguNDAwMSAyMy45NzI1IDI3Ljk4MyAyMy4wNzUyIDI3Ljk4M0MyMS41OTk2IDI3Ljk4MyAxOS45NDcxIDI5LjU0MzkgMTkuMjIzNiAzMS41ODE4QzE4LjI1MzYgMzQuMjk5MSAxNi4yOTc4IDM2LjkyMTcgMTMuNjY1OCAzNi45MjE3QzExLjI3NzIgMzYuOTIxNyAxMC4wMTY1IDM0LjkzNDIgMTAuMDE2NSAzMS43OTY3QzEwLjAxNjUgMjcuMjU5NSAxMy4zNDY3IDIzLjU1NjQgMTUuODE0NCAyMy41NTY0QzE2Ljk5NjEgMjMuNTU2NCAxNy41NTg1IDI0LjMwODQgMTcuNTU4NSAyNS40NjE3QzE3LjU1ODUgMjYuODU4MiAxNi43ODEyIDI3LjUwNTkgMTYuNzgxMiAyOC4wMzY3QzE2Ljc4MTIgMjguMTk3OSAxNi45MTM5IDI4LjM1OSAxNy4xODI1IDI4LjM1OUMxOC4yNTY3IDI4LjM1OSAxOS41MTc0IDI3LjA5ODQgMTkuNTE3NCAyNS4zNzk1QzE5LjUxNzQgMjMuNjYwNyAxOC4xMjQgMjIuNCAxNS42NTMyIDIyLjRDMTEuNTc0MiAyMi40IDcuNDY2NjcgMjYuNTA3NSA3LjQ2NjY3IDMxLjc2ODJDNy40NjY2NyAzNS45NTQ3IDkuNTMzMDYgMzguNDc5MyAxMy4xMDM0IDM4LjQ3OTNDMTUuNTM5NSAzOC40NzkzIDE3LjY2OSAzNi41ODY3IDE4LjgxOTEgMzQuMzcxNkMxOC45NDg3IDM2LjIwNzQgMTkuNzc5NyAzNy4xNjE2IDIxLjA0NjcgMzcuMTYxNkMyMi4xNzQ2IDM3LjE2MTYgMjMuMDg3OCAzNi40OTE4IDIzLjc4NiAzNS4zMTAyQzI0LjA1NDYgMzYuNTQ1NiAyNC43NjU1IDM3LjE1MjMgMjUuNjkxMyAzNy4xNTIzQzI2Ljc1MjkgMzcuMTUyMyAyNy42Mzc2IDM2LjQ3OTEgMjguNDgxMiAzNS4yMzFDMjguNDY4NiAzNi4yMTA3IDI4LjY5MjkgMzcuMTMzMiAyOS41NDI4IDM3LjEzMzJDMjkuOTQ0MSAzNy4xMzMyIDMwLjQyNDQgMzcuMDQxNyAzMC41MDk3IDM2LjY5MUMzMS40MDA3IDMyLjk5MSAzMy42MTU3IDI5Ljk3MDQgMzQuMjkxOSAyOS45NzA0QzM0LjQ5MDggMjkuOTcwNCAzNC41NDQ2IDMwLjE2IDM0LjU0NDYgMzAuMzkwNkMzNC41NDQ2IDMxLjM5NTQgMzMuODM2NiAzMy40NTU1IDMzLjgzNjYgMzQuNzY5N0MzMy44MzY2IDM2LjE5NDcgMzQuNDQwMyAzNy4xMzMyIDM1LjY4ODQgMzcuMTMzMkMzNy4wNzIyIDM3LjEzMzIgMzguNDc4MSAzNS40Mzk2IDM5LjQxNjYgMzIuOTYyNUMzOS43MTA1IDM1LjI3NTUgNDAuMzQ1NSAzNy4xNDI2IDQxLjMzNDYgMzcuMTQyNkM0Mi41NTM5IDM3LjE0MjYgNDQuNzE4NiAzNC41ODAyIDQ2LjAyOTUgMzEuODYzQzQ2LjU0MTYgMzEuOTI5NCA0Ny4zMTU3IDMxLjkxMzYgNDguMDU1MSAzMS4zODkxQzQ3Ljc0MjIgMzIuMTg4NCA0Ny41NTU3IDMzLjA2MzcgNDcuNTU1NyAzMy45MzU4QzQ3LjU1NTcgMzYuNDU3IDQ4Ljc1NjMgMzcuMTYxNiA0OS43OTI5IDM3LjE2MTZDNTAuOTIwNiAzNy4xNjE2IDUxLjgzMzggMzYuNDkxOCA1Mi41MzIxIDM1LjMxMDJDNTIuNzYyNyAzNi4zNzQ4IDUzLjM1MDMgMzcuMTQ4OSA1NC40MzQzIDM3LjE0ODlDNTYuMTI3NiAzNy4xNDg5IDU3LjYgMzUuNDE3NSA1Ny42IDMzLjk5NTZDNTcuNiAzMy42MTk5IDU3LjQzODkgMzMuMzg4OSA1Ny4yNDk0IDMzLjM4ODlaTTIyLjA4MyAzNS43NjgyQzIxLjM5NzQgMzUuNzY4MiAyMS4xMjg4IDM1LjA3NjMgMjEuMTI4OCAzNC4wNDk0QzIxLjEyODggMzIuMjY3NCAyMi4zNDg0IDI5LjI4NDggMjMuNjQwNyAyOS4yODQ4QzI0LjIwMzEgMjkuMjg0OCAyNC40MTggMjkuOTUxNSAyNC40MTggMzAuNzYzNUMyNC40MTggMzIuNTczOSAyMy4yNTg0IDM1Ljc2ODIgMjIuMDgzIDM1Ljc2ODJaTTQ1LjUyMTEgMzAuNDQxMkM0NS4xMTMzIDI5Ljk1NDYgNDQuOTY0OSAyOS4yOTExIDQ0Ljk2NDkgMjguNzAzNEM0NC45NjQ5IDI3Ljk3NjcgNDUuMjMwMyAyNy4zNjM3IDQ1LjU0OTUgMjcuMzYzN0M0NS44Njg0IDI3LjM2MzcgNDUuOTYzMyAyNy42NzY1IDQ1Ljk2MzMgMjguMTEyNkM0NS45NjMzIDI4LjgzOTMgNDUuNzA0MyAyOS45MDcyIDQ1LjUyMTEgMzAuNDQxMlpNNTAuODI2IDM1Ljc2ODJDNTAuMTQzNSAzNS43NjgyIDQ5Ljg3NDggMzQuOTc1MyA0OS44NzQ4IDM0LjA0OTRDNDkuODc0OCAzMi4zMjc1IDUxLjA5NDQgMjkuMjg0OCA1Mi4zOTY0IDI5LjI4NDhDNTIuOTU4NiAyOS4yODQ4IDUzLjE2MDggMjkuOTQyIDUzLjE2MDggMzAuNzYzNUM1My4xNjA4IDMyLjU3MzkgNTIuMDIwMyAzNS43NjgyIDUwLjgyNiAzNS43NjgyWiIgZmlsbD0id2hpdGUiLz4KPGRlZnM+CjxyYWRpYWxHcmFkaWVudCBpZD0icGFpbnQwX3JhZGlhbF80XzU3IiBjeD0iMCIgY3k9IjAiIHI9IjEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiBncmFkaWVudFRyYW5zZm9ybT0idHJhbnNsYXRlKDEyLjM2MjEgNTYuNzI0Mikgcm90YXRlKC00OS40MTU2KSBzY2FsZSg0OS40OTg2KSI+CjxzdG9wIHN0b3AtY29sb3I9IiM2NDIwRkYiLz4KPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjNjQyMEZGIiBzdG9wLW9wYWNpdHk9IjAiLz4KPC9yYWRpYWxHcmFkaWVudD4KPHJhZGlhbEdyYWRpZW50IGlkPSJwYWludDFfcmFkaWFsXzRfNTciIGN4PSIwIiBjeT0iMCIgcj0iMSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIGdyYWRpZW50VHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTYuOTQzMiA3LjI3NTc5KSByb3RhdGUoNTQuNzAzNSkgc2NhbGUoNTUuODE4OCkiPgo8c3RvcCBzdG9wLWNvbG9yPSIjMDBDNENDIi8+CjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzAwQzRDQyIgc3RvcC1vcGFjaXR5PSIwIi8+CjwvcmFkaWFsR3JhZGllbnQ+CjxyYWRpYWxHcmFkaWVudCBpZD0icGFpbnQyX3JhZGlhbF80XzU3IiBjeD0iMCIgY3k9IjAiIHI9IjEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiBncmFkaWVudFRyYW5zZm9ybT0idHJhbnNsYXRlKDEyLjM2MjEgNTYuNzI0Mikgcm90YXRlKC00NS4xOTU0KSBzY2FsZSg0OC44OTk0IDIyLjQ4OTUpIj4KPHN0b3Agc3RvcC1jb2xvcj0iIzY0MjBGRiIvPgo8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM2NDIwRkYiIHN0b3Atb3BhY2l0eT0iMCIvPgo8L3JhZGlhbEdyYWRpZW50Pgo8cmFkaWFsR3JhZGllbnQgaWQ9InBhaW50M19yYWRpYWxfNF81NyIgY3g9IjAiIGN5PSIwIiByPSIxIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgZ3JhZGllbnRUcmFuc2Zvcm09InRyYW5zbGF0ZSgyNi4xNzI2IDguNjIzMTYpIHJvdGF0ZSg2Ni41MTk4KSBzY2FsZSg1MC4zODY5IDg0LjQwOTMpIj4KPHN0b3Agc3RvcC1jb2xvcj0iIzAwQzRDQyIgc3RvcC1vcGFjaXR5PSIwLjcyNTkxNiIvPgo8c3RvcCBvZmZzZXQ9IjAuMDAwMSIgc3RvcC1jb2xvcj0iIzAwQzRDQyIvPgo8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMwMEM0Q0MiIHN0b3Atb3BhY2l0eT0iMCIvPgo8L3JhZGlhbEdyYWRpZW50Pgo8L2RlZnM+Cjwvc3ZnPgo=",
+            "author": "Canva",
+            "homepage": "https://www.canva.com/developers/"
+          },
+          "machines": {
+            "types": [
+              "device",
+              "cloud"
+            ],
+            "os": [
+              "macos",
+              "linux",
+              "windows"
+            ]
+          },
+          "skills": [
+            {
+              "name": "canva-brand-check",
+              "description": "Check a Canva design against a brand kit and report where it diverges — off-palette colors, non-brand fonts, logo misuse, and off-tone copy. Read-only; makes no changes. Use when the user asks \"is this on brand\", \"check this against our brand kit\", \"do a brand review\", \"does this match our brand guidelines\", or \"brand-check my design\"."
+            },
+            {
+              "name": "canva-bulk-create",
+              "description": "Bulk-create Canva designs from tabular data using a brand template with autofill fields, producing one design per row. Use when users say \"bulk create designs from this CSV\", \"generate one design per row\", \"create a design for each product\", \"batch generate from a template\", or \"autofill a template from a spreadsheet\". Accepts any tabular data source — uploaded files, pasted tables, JSON, or URLs."
+            },
+            {
+              "name": "canva-cli",
+              "description": "Use the Canva CLI (`canva api`) for Canva REST API workflows with local files, scripts, and coding agents. Use when the request needs direct, programmatic work with Canva designs, folders, assets, exports, or other REST API resources."
+            },
+            {
+              "name": "canva-design-feedback",
+              "description": "Read a Canva design and return structured, actionable design feedback — visual hierarchy, copy/messaging, layout & spacing, consistency, readability, and accessibility. Read-only; makes no changes to the design. Use when the user asks to \"review my design\", \"give me feedback on this\", \"critique my deck/poster/flyer\", \"how can I improve this design\", or \"what's wrong with this slide\"."
+            },
+            {
+              "name": "canva-edit-design",
+              "description": "Make edits to an existing Canva design — change or fix text, replace/insert/delete images and videos, reformat text (size, weight, style, color, alignment, lists, line height), reposition or resize elements, and update the title. Use when the user wants to change, edit, update, fix, translate, replace, or reformat content in a specific Canva design. This is the safe edit engine that other Canva skills (e.g. implement-feedback) build on."
+            },
+            {
+              "name": "canva-implement-feedback",
+              "description": "Implement reviewer feedback on a Canva design. Reads all comment threads, synthesises what reviewers want, makes the clear-cut changes directly, and flags anything that needs a human decision. Use when the user asks to \"implement feedback on my deck\", \"address comments on a design\", \"apply review feedback\", \"fix the comments on my presentation\", or \"implement the feedback\"."
+            },
+            {
+              "name": "canva-resize-for-social-media",
+              "description": "Resize a Canva design into multiple social media formats (Facebook post, Facebook story, Instagram post, Instagram story, LinkedIn post). Use this skill when users want to resize Canva designs specifically for multiple social media platforms in one operation, rather than resizing to a single format manually."
+            }
+          ],
+          "mcpServers": {
+            "canva": {
+              "runsOn": "server",
+              "type": "streamable-http",
+              "url": "https://mcp.canva.com/mcp",
+              "headers": {}
+            }
+          }
+        }
+      }
+    },
+    "doc": {
+      "latest": "1.0.0",
+      "releases": {
+        "1.0.0": {
+          "commit": "b0af0fddba062ad022e5a444c5dafbd75bd40edc",
+          "path": "plugins/doc",
+          "package": {
+            "key": "youagent/plugin-releases/doc/1.0.0/afddd0f256282026950ee061773c7ab8e440ccc692bf634573e7312e7b3fa695.tar.gz",
+            "sha256": "afddd0f256282026950ee061773c7ab8e440ccc692bf634573e7312e7b3fa695",
+            "bytes": 11369,
+            "tarSha256": "c624e21888f41b8ee335f8f722203a7077f34d6ce6ab8624ef3e831bac86d6be"
+          },
+          "display": {
+            "name": "Word",
+            "description": "Read, create, and edit Word (.docx) documents with python-docx, and check the layout by rendering pages.",
+            "category": "Documents",
+            "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARQSURBVHgB7Z25TuRAEIZ7uG8ShAQBCQlvQMK7ExOTkJCQIAFC4j7m2v0t9e4su+zYXd1Vvz31SdYkGLX9uauPard7w+FwHBwa5oJDhQshw4WQ4ULIcCFkuBAyXAgZLoQMF0LGQjBgNBr98VuC8Xgc5ufnw9xcu545FSGDwSD0+/3q+DlVU92s0ry+vlbCV1ZWwvr6enW0gaJCIAI3Br9WvL+//zq2t7fDwoJJUKhNkdLhyXx+fjYV8ZWXl5fw8fERdnd3qaVkD7CQ8PDwQCUjgjLd3NyEz8/PwEpWIXgCHx8fVdqIVNilZBOCC0RYaAMIqaxSsgjBBbZFRoRVShYh7GHqOxiliIWg3Sg5wCsNmxSxkLe3t9B2mKSIhLS9dkzCIkUkhLk/nwKDFJEQxsGfFGspyUK0JgktsJQiEtJlohTtTkuykK7Wjkkg5fb2tpoo1cIzhjW4v79Xk+JCaqIlxYU0QEOKC2lIaSkuJIGSUjorpNfrhZKUkmKWXMbih8vLy2olSl0WFxfD4eFhWFtbm/q3WP5TeqwEKWBjYyPkwkQIZJyenjaSEbm6ugonJyfVCpL/gTVZKf+/KbmlmISs8/Pz5JuF8y4uLqb+HYSUDluRnOHLRAhqSOnzIQNStIAUrP2SYiJkWrjJdf7S0pJaLQGQIs0PmQg5Ojqq1TD/C5yH8+uAhn15eTlogXTE09NTkNBLfS0a2ULJShOEnevr62pRXV1QMw4ODqreVhNwo1BejQlRPAT7+/vJi7zNhGiDUIL8hkZSDctVscg7Be6VxxnBE4ubBDHoqeEXR4laIxn/zIyQiEa7IlnM7XNZZLgQMlwIGS6EDBdChgshw4WQYTYOQXIK0+gaOYsmYK4MSTAcFpjUECSZJDmRkmCODWVDGS0wE8LOTAlhrBlfsSqjiZC9vb3AjlUZzRJUyGuwgrLVTYLlxjQfggZUml/PDXpZqdnMCDa6SZ1RNp1+z3HxXcMHhmS4EDJcCBkuhAwXQoYLIcOFkOFCyDAdGN7d3VGO1Hd2doIVJkIwk3p2dlYJYQRCjo+PG68hzoFJyEKmkFUGQNmQ0bTARAizjMhMJagsQkFTrCY9TYRYLSBoglW+xiwfgpDQ9LVoDeKqE0nGUJIPmZkXdjSRCPGBIRnJQtg/+2CJ5HXsZCFt+3KNJpJ7k3wm3v92KX8j/cyS6I5qvgPeFqRjLJGQNgzwtEl9HToiEoKG3Rv33yBiSMO4uBFoy9fPNFhdXQ1SxELQiEmraReAjBydnCzdJEw3aG6FxAauPUftANn6rZubmzPZDcY149qz/b+QCRRsa2trpqSgZuS+5uTJxe/AZi7Ik2Pyscug3USYyr1BWnYhEQjBlwW68gWeCGoDNrws1d0vJiQCMTja/vEXCECtwLaBJSkuJIKagn2kJveqYibuaopfzb0b1YQ49fDpWjJcCBkuhAwXQoYLIcOFkOFCyHAhZLgQMn4Ar15XnoWw+pQAAAAASUVORK5CYII=",
+            "author": "OpenAI",
+            "homepage": "https://github.com/openai/skills/tree/45d05d75363abf13f99d09e899d61e07b8010685/skills/.curated/doc"
+          },
+          "machines": {
+            "types": [
+              "device",
+              "cloud"
+            ],
+            "os": [
+              "macos",
+              "linux",
+              "windows"
+            ]
+          },
+          "skills": [
+            {
+              "name": "doc",
+              "description": "Use when the task involves reading, creating, or editing `.docx` documents, especially when formatting or layout fidelity matters; prefer `python-docx` plus the bundled `scripts/render_docx.py` for visual checks."
+            }
+          ],
+          "mcpServers": {}
+        }
+      }
+    },
+    "huggingface": {
+      "latest": "1.0.0",
+      "releases": {
+        "1.0.0": {
+          "commit": "b0af0fddba062ad022e5a444c5dafbd75bd40edc",
+          "path": "plugins/huggingface",
+          "package": {
+            "key": "youagent/plugin-releases/huggingface/1.0.0/9d94af2f80c7734c21d8630f51c9ff8dbfe197832ed118a613cd618c2bbd3a6e.tar.gz",
+            "sha256": "9d94af2f80c7734c21d8630f51c9ff8dbfe197832ed118a613cd618c2bbd3a6e",
+            "bytes": 2428,
+            "tarSha256": "2afe70e5fc6b8fd495a96cdf3594c0b41f2f54ea7d7020e887d931fb8ca6d17f"
+          },
+          "display": {
+            "name": "Hugging Face",
+            "description": "Search models, datasets, Spaces, and papers, and run Spaces tools on the Hugging Face Hub through the Hugging Face MCP server.",
+            "category": "Developer tools",
+            "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5NSIgaGVpZ2h0PSI4OCIgZmlsbD0ibm9uZSI+Cgk8cGF0aCBmaWxsPSIjRkZEMjFFIiBkPSJNNDcuMjEgNzYuNWEzNC43NSAzNC43NSAwIDEgMCAwLTY5LjUgMzQuNzUgMzQuNzUgMCAwIDAgMCA2OS41WiIgLz4KCTxwYXRoCgkJZmlsbD0iI0ZGOUQwQiIKCQlkPSJNODEuOTYgNDEuNzVhMzQuNzUgMzQuNzUgMCAxIDAtNjkuNSAwIDM0Ljc1IDM0Ljc1IDAgMCAwIDY5LjUgMFptLTczLjUgMGEzOC43NSAzOC43NSAwIDEgMSA3Ny41IDAgMzguNzUgMzguNzUgMCAwIDEtNzcuNSAwWiIKCS8+Cgk8cGF0aAoJCWZpbGw9IiMzQTNCNDUiCgkJZD0iTTU4LjUgMzIuM2MxLjI4LjQ0IDEuNzggMy4wNiAzLjA3IDIuMzhhNSA1IDAgMSAwLTYuNzYtMi4wN2MuNjEgMS4xNSAyLjU1LS43MiAzLjctLjMyWk0zNC45NSAzMi4zYy0xLjI4LjQ0LTEuNzkgMy4wNi0zLjA3IDIuMzhhNSA1IDAgMSAxIDYuNzYtMi4wN2MtLjYxIDEuMTUtMi41Ni0uNzItMy43LS4zMloiCgkvPgoJPHBhdGgKCQlmaWxsPSIjRkYzMjNEIgoJCWQ9Ik00Ni45NiA1Ni4yOWM5LjgzIDAgMTMtOC43NiAxMy0xMy4yNiAwLTIuMzQtMS41Ny0xLjYtNC4wOS0uMzYtMi4zMyAxLjE1LTUuNDYgMi43NC04LjkgMi43NC03LjE5IDAtMTMtNi44OC0xMy0yLjM4czMuMTYgMTMuMjYgMTMgMTMuMjZaIgoJLz4KCTxwYXRoCgkJZmlsbD0iIzNBM0I0NSIKCQlmaWxsLXJ1bGU9ImV2ZW5vZGQiCgkJZD0iTTM5LjQzIDU0YTguNyA4LjcgMCAwIDEgNS4zLTQuNDljLjQtLjEyLjgxLjU3IDEuMjQgMS4yOC40LjY4LjgyIDEuMzcgMS4yNCAxLjM3LjQ1IDAgLjktLjY4IDEuMzMtMS4zNS40NS0uNy44OS0xLjM4IDEuMzItMS4yNWE4LjYxIDguNjEgMCAwIDEgNSA0LjE3YzMuNzMtMi45NCA1LjEtNy43NCA1LjEtMTAuNyAwLTIuMzQtMS41Ny0xLjYtNC4wOS0uMzZsLS4xNC4wN2MtMi4zMSAxLjE1LTUuMzkgMi42Ny04Ljc3IDIuNjdzLTYuNDUtMS41Mi04Ljc3LTIuNjdjLTIuNi0xLjI5LTQuMjMtMi4xLTQuMjMuMjkgMCAzLjA1IDEuNDYgOC4wNiA1LjQ3IDEwLjk3WiIKCQljbGlwLXJ1bGU9ImV2ZW5vZGQiCgkvPgoJPHBhdGgKCQlmaWxsPSIjRkY5RDBCIgoJCWQ9Ik03MC43MSAzN2EzLjI1IDMuMjUgMCAxIDAgMC02LjUgMy4yNSAzLjI1IDAgMCAwIDAgNi41Wk0yNC4yMSAzN2EzLjI1IDMuMjUgMCAxIDAgMC02LjUgMy4yNSAzLjI1IDAgMCAwIDAgNi41Wk0xNy41MiA0OGMtMS42MiAwLTMuMDYuNjYtNC4wNyAxLjg3YTUuOTcgNS45NyAwIDAgMC0xLjMzIDMuNzYgNy4xIDcuMSAwIDAgMC0xLjk0LS4zYy0xLjU1IDAtMi45NS41OS0zLjk0IDEuNjZhNS44IDUuOCAwIDAgMC0uOCA3IDUuMyA1LjMgMCAwIDAtMS43OSAyLjgyYy0uMjQuOS0uNDggMi44LjggNC43NGE1LjIyIDUuMjIgMCAwIDAtLjM3IDUuMDJjMS4wMiAyLjMyIDMuNTcgNC4xNCA4LjUyIDYuMSAzLjA3IDEuMjIgNS44OSAyIDUuOTEgMi4wMWE0NC4zMyA0NC4zMyAwIDAgMCAxMC45MyAxLjZjNS44NiAwIDEwLjA1LTEuOCAxMi40Ni01LjM0IDMuODgtNS42OSAzLjMzLTEwLjktMS43LTE1LjkyLTIuNzctMi43OC00LjYyLTYuODctNS03Ljc3LS43OC0yLjY2LTIuODQtNS42Mi02LjI1LTUuNjJhNS43IDUuNyAwIDAgMC00LjYgMi40NmMtMS0xLjI2LTEuOTgtMi4yNS0yLjg2LTIuODJBNy40IDcuNCAwIDAgMCAxNy41MiA0OFptMCA0Yy41MSAwIDEuMTQuMjIgMS44Mi42NSAyLjE0IDEuMzYgNi4yNSA4LjQzIDcuNzYgMTEuMTguNS45MiAxLjM3IDEuMzEgMi4xNCAxLjMxIDEuNTUgMCAyLjc1LTEuNTMuMTUtMy40OC0zLjkyLTIuOTMtMi41NS03LjcyLS42OC04LjAxLjA4LS4wMi4xNy0uMDIuMjQtLjAyIDEuNyAwIDIuNDUgMi45MyAyLjQ1IDIuOTNzMi4yIDUuNTIgNS45OCA5LjNjMy43NyAzLjc3IDMuOTcgNi44IDEuMjIgMTAuODMtMS44OCAyLjc1LTUuNDcgMy41OC05LjE2IDMuNTgtMy44MSAwLTcuNzMtLjktOS45Mi0xLjQ2LS4xMS0uMDMtMTMuNDUtMy44LTExLjc2LTcgLjI4LS41NC43NS0uNzYgMS4zNC0uNzYgMi4zOCAwIDYuNyAzLjU0IDguNTcgMy41NC40MSAwIC43LS4xNy44My0uNi43OS0yLjg1LTEyLjA2LTQuMDUtMTAuOTgtOC4xNy4yLS43My43MS0xLjAyIDEuNDQtMS4wMiAzLjE0IDAgMTAuMiA1LjUzIDExLjY4IDUuNTMuMTEgMCAuMi0uMDMuMjQtLjEuNzQtMS4yLjMzLTIuMDQtNC45LTUuMi01LjIxLTMuMTYtOC44OC01LjA2LTYuOC03LjMzLjI0LS4yNi41OC0uMzggMS0uMzggMy4xNyAwIDEwLjY2IDYuODIgMTAuNjYgNi44MnMyLjAyIDIuMSAzLjI1IDIuMWMuMjggMCAuNTItLjEuNjgtLjM4Ljg2LTEuNDYtOC4wNi04LjIyLTguNTYtMTEuMDEtLjM0LTEuOS4yNC0yLjg1IDEuMzEtMi44NVoiCgkvPgoJPHBhdGgKCQlmaWxsPSIjRkZEMjFFIgoJCWQ9Ik0zOC42IDc2LjY5YzIuNzUtNC4wNCAyLjU1LTcuMDctMS4yMi0xMC44NC0zLjc4LTMuNzctNS45OC05LjMtNS45OC05LjNzLS44Mi0zLjItMi42OS0yLjljLTEuODcuMy0zLjI0IDUuMDguNjggOC4wMSAzLjkxIDIuOTMtLjc4IDQuOTItMi4yOSAyLjE3LTEuNS0yLjc1LTUuNjItOS44Mi03Ljc2LTExLjE4LTIuMTMtMS4zNS0zLjYzLS42LTMuMTMgMi4yLjUgMi43OSA5LjQzIDkuNTUgOC41NiAxMS0uODcgMS40Ny0zLjkzLTEuNzEtMy45My0xLjcxcy05LjU3LTguNzEtMTEuNjYtNi40NGMtMi4wOCAyLjI3IDEuNTkgNC4xNyA2LjggNy4zMyA1LjIzIDMuMTYgNS42NCA0IDQuOSA1LjItLjc1IDEuMi0xMi4yOC04LjUzLTEzLjM2LTQuNC0xLjA4IDQuMTEgMTEuNzcgNS4zIDEwLjk4IDguMTUtLjggMi44NS05LjA2LTUuMzgtMTAuNzQtMi4xOC0xLjcgMy4yMSAxMS42NSA2Ljk4IDExLjc2IDcuMDEgNC4zIDEuMTIgMTUuMjUgMy40OSAxOS4wOC0yLjEyWiIKCS8+Cgk8cGF0aAoJCWZpbGw9IiNGRjlEMEIiCgkJZD0iTTc3LjQgNDhjMS42MiAwIDMuMDcuNjYgNC4wNyAxLjg3YTUuOTcgNS45NyAwIDAgMSAxLjMzIDMuNzYgNy4xIDcuMSAwIDAgMSAxLjk1LS4zYzEuNTUgMCAyLjk1LjU5IDMuOTQgMS42NmE1LjggNS44IDAgMCAxIC44IDcgNS4zIDUuMyAwIDAgMSAxLjc4IDIuODJjLjI0LjkuNDggMi44LS44IDQuNzRhNS4yMiA1LjIyIDAgMCAxIC4zNyA1LjAyYy0xLjAyIDIuMzItMy41NyA0LjE0LTguNTEgNi4xLTMuMDggMS4yMi01LjkgMi01LjkyIDIuMDFhNDQuMzMgNDQuMzMgMCAwIDEtMTAuOTMgMS42Yy01Ljg2IDAtMTAuMDUtMS44LTEyLjQ2LTUuMzQtMy44OC01LjY5LTMuMzMtMTAuOSAxLjctMTUuOTIgMi43OC0yLjc4IDQuNjMtNi44NyA1LjAxLTcuNzcuNzgtMi42NiAyLjgzLTUuNjIgNi4yNC01LjYyYTUuNyA1LjcgMCAwIDEgNC42IDIuNDZjMS0xLjI2IDEuOTgtMi4yNSAyLjg3LTIuODJBNy40IDcuNCAwIDAgMSA3Ny40IDQ4Wm0wIDRjLS41MSAwLTEuMTMuMjItMS44Mi42NS0yLjEzIDEuMzYtNi4yNSA4LjQzLTcuNzYgMTEuMThhMi40MyAyLjQzIDAgMCAxLTIuMTQgMS4zMWMtMS41NCAwLTIuNzUtMS41My0uMTQtMy40OCAzLjkxLTIuOTMgMi41NC03LjcyLjY3LTguMDFhMS41NCAxLjU0IDAgMCAwLS4yNC0uMDJjLTEuNyAwLTIuNDUgMi45My0yLjQ1IDIuOTNzLTIuMiA1LjUyLTUuOTcgOS4zYy0zLjc4IDMuNzctMy45OCA2LjgtMS4yMiAxMC44MyAxLjg3IDIuNzUgNS40NyAzLjU4IDkuMTUgMy41OCAzLjgyIDAgNy43My0uOSA5LjkzLTEuNDYuMS0uMDMgMTMuNDUtMy44IDExLjc2LTctLjI5LS41NC0uNzUtLjc2LTEuMzQtLjc2LTIuMzggMC02LjcxIDMuNTQtOC41NyAzLjU0LS40MiAwLS43MS0uMTctLjgzLS42LS44LTIuODUgMTIuMDUtNC4wNSAxMC45Ny04LjE3LS4xOS0uNzMtLjctMS4wMi0xLjQ0LTEuMDItMy4xNCAwLTEwLjIgNS41My0xMS42OCA1LjUzLS4xIDAtLjE5LS4wMy0uMjMtLjEtLjc0LTEuMi0uMzQtMi4wNCA0Ljg4LTUuMiA1LjIzLTMuMTYgOC45LTUuMDYgNi44LTcuMzMtLjIzLS4yNi0uNTctLjM4LS45OC0uMzgtMy4xOCAwLTEwLjY3IDYuODItMTAuNjcgNi44MnMtMi4wMiAyLjEtMy4yNCAyLjFhLjc0Ljc0IDAgMCAxLS42OC0uMzhjLS44Ny0xLjQ2IDguMDUtOC4yMiA4LjU1LTExLjAxLjM0LTEuOS0uMjQtMi44NS0xLjMxLTIuODVaIgoJLz4KCTxwYXRoCgkJZmlsbD0iI0ZGRDIxRSIKCQlkPSJNNTYuMzMgNzYuNjljLTIuNzUtNC4wNC0yLjU2LTcuMDcgMS4yMi0xMC44NCAzLjc3LTMuNzcgNS45Ny05LjMgNS45Ny05LjNzLjgyLTMuMiAyLjctMi45YzEuODYuMyAzLjIzIDUuMDgtLjY4IDguMDEtMy45MiAyLjkzLjc4IDQuOTIgMi4yOCAyLjE3IDEuNTEtMi43NSA1LjYzLTkuODIgNy43Ni0xMS4xOCAyLjEzLTEuMzUgMy42NC0uNiAzLjEzIDIuMi0uNSAyLjc5LTkuNDIgOS41NS04LjU1IDExIC44NiAxLjQ3IDMuOTItMS43MSAzLjkyLTEuNzFzOS41OC04LjcxIDExLjY2LTYuNDRjMi4wOCAyLjI3LTEuNTggNC4xNy02LjggNy4zMy01LjIzIDMuMTYtNS42MyA0LTQuOSA1LjIuNzUgMS4yIDEyLjI4LTguNTMgMTMuMzYtNC40IDEuMDggNC4xMS0xMS43NiA1LjMtMTAuOTcgOC4xNS44IDIuODUgOS4wNS01LjM4IDEwLjc0LTIuMTggMS42OSAzLjIxLTExLjY1IDYuOTgtMTEuNzYgNy4wMS00LjMxIDEuMTItMTUuMjYgMy40OS0xOS4wOC0yLjEyWiIKCS8+Cjwvc3ZnPgo=",
+            "author": "Hugging Face",
+            "homepage": "https://huggingface.co/docs/hub/hf-mcp-server"
+          },
+          "machines": {
+            "types": [
+              "device",
+              "cloud"
+            ],
+            "os": [
+              "macos",
+              "linux",
+              "windows"
+            ]
+          },
+          "skills": [],
+          "mcpServers": {
+            "huggingface": {
+              "runsOn": "server",
+              "type": "streamable-http",
+              "url": "https://huggingface.co/mcp?login",
+              "headers": {}
+            }
+          }
+        }
+      }
+    },
+    "linear": {
+      "latest": "1.0.0",
+      "releases": {
+        "1.0.0": {
+          "commit": "b0af0fddba062ad022e5a444c5dafbd75bd40edc",
+          "path": "plugins/linear",
+          "package": {
+            "key": "youagent/plugin-releases/linear/1.0.0/46ea8b36ed5526d6265381aef377d460b73976ec882718603849558fc175e99b.tar.gz",
+            "sha256": "46ea8b36ed5526d6265381aef377d460b73976ec882718603849558fc175e99b",
+            "bytes": 792,
+            "tarSha256": "026425fcb9b5b3e1c496258c43e44f3596340708bbe854d85b2c332dce15fad8"
+          },
+          "display": {
+            "name": "Linear",
+            "description": "Find, create, and update Linear issues, projects, and comments through the Linear MCP server.",
+            "category": "Productivity",
+            "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2IDE2Ij4KICA8cmVjdCB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHJ4PSIyIiBmaWxsPSIjMDAwIi8+CiAgPHBhdGgKICAgIGQ9Ik0yLjE0NyA5LjM4M2MtLjAyNy0uMTE0LjEwOS0uMTg2LjE5Mi0uMTAzbDQuMzgxIDQuMzhjLjA4My4wODMuMDExLjIxOS0uMTAzLjE5MmE2LjAyIDYuMDIgMCAwIDEtNC40Ny00LjQ3Wk0yIDcuNjI3YS4xMi4xMiAwIDAgMCAuMDM1LjA5MWw2LjI0NyA2LjI0N2EuMTIuMTIgMCAwIDAgLjA5MS4wMzVxLjQyOC0uMDI3LjgzNi0uMTExYS4xMTcuMTE3IDAgMCAwIC4wNTctLjE5OEwyLjMxIDYuNzM0YS4xMTcuMTE3IDAgMCAwLS4xOTguMDU3IDYgNiAwIDAgMC0uMTEuODM2Wm0uNTA1LTIuMDYyYS4xMi4xMiAwIDAgMCAuMDI1LjEzMmw3Ljc3MyA3Ljc3M2EuMTIuMTIgMCAwIDAgLjEzMi4wMjVxLjMyMi0uMTQ0LjYyMy0uMzIyYS4xMTguMTE4IDAgMCAwIC4wMjItLjE4NUwzLjAxMiA0LjkyYS4xMTguMTE4IDAgMCAwLS4xODUuMDIycS0uMTc4LjMtLjMyMi42MjNtMS4wMTQtMS4zOTZhLjEyLjEyIDAgMCAxLS4wMDUtLjE2MyA2LjAwNiA2LjAwNiAwIDEgMSA4LjQ4IDguNDguMTIuMTIgMCAwIDEtLjE2My0uMDA1eiIKICAgIGZpbGw9IiNGRkYiCiAgLz4KPC9zdmc+Cg==",
+            "author": "Linear",
+            "homepage": "https://linear.app/docs/mcp"
+          },
+          "machines": {
+            "types": [
+              "device",
+              "cloud"
+            ],
+            "os": [
+              "macos",
+              "linux",
+              "windows"
+            ]
+          },
+          "skills": [],
+          "mcpServers": {
+            "linear": {
+              "runsOn": "server",
+              "type": "streamable-http",
+              "url": "https://mcp.linear.app/mcp",
+              "headers": {}
+            }
+          }
+        }
+      }
+    },
+    "notion": {
+      "latest": "1.0.0",
+      "releases": {
+        "1.0.0": {
+          "commit": "b0af0fddba062ad022e5a444c5dafbd75bd40edc",
+          "path": "plugins/notion",
+          "package": {
+            "key": "youagent/plugin-releases/notion/1.0.0/4eff63363534b1bbd498ab6131042be1fbcd8132323c31401ffed8388a461824.tar.gz",
+            "sha256": "4eff63363534b1bbd498ab6131042be1fbcd8132323c31401ffed8388a461824",
+            "bytes": 80010,
+            "tarSha256": "68419dece35a5dcb228197bcb71d1fa9cc69b866ebba5649cb96604e93de1fbe"
+          },
+          "display": {
+            "name": "Notion",
+            "description": "Notion skills and the Notion MCP server: search and edit your workspace, capture knowledge, prepare meetings, research topics, and turn specs into tasks.",
+            "category": "Productivity",
+            "icon": "data:image/png;base64,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",
+            "author": "Notion",
+            "homepage": "https://developers.notion.com/docs/mcp"
+          },
+          "machines": {
+            "types": [
+              "device",
+              "cloud"
+            ],
+            "os": [
+              "macos",
+              "linux",
+              "windows"
+            ]
+          },
+          "skills": [
+            {
+              "name": "notion-knowledge-capture",
+              "description": "Transforms conversations and discussions into structured documentation pages in Notion. Captures insights, decisions, and knowledge from chat context, formats appropriately, and saves to wikis or databases with proper organization and linking for easy discovery."
+            },
+            {
+              "name": "notion-meeting-intelligence",
+              "description": "Prepares meeting materials by gathering context from Notion, enriching with Claude research, and creating both an internal pre-read and external agenda saved to Notion. Helps you arrive prepared with comprehensive background and structured meeting docs."
+            },
+            {
+              "name": "notion-research-documentation",
+              "description": "Searches across your Notion workspace, synthesizes findings from multiple pages, and creates comprehensive research documentation saved as new Notion pages. Turns scattered information into structured reports with proper citations and actionable insights."
+            },
+            {
+              "name": "notion-spec-to-implementation",
+              "description": "Turns product or tech specs into concrete Notion tasks that Claude code can implement. Breaks down spec pages into detailed implementation plans with clear tasks, acceptance criteria, and progress tracking to guide development from requirements to completion."
+            }
+          ],
+          "mcpServers": {
+            "notion": {
+              "runsOn": "server",
+              "type": "streamable-http",
+              "url": "https://mcp.notion.com/mcp",
+              "headers": {}
+            }
+          }
+        }
+      }
+    },
+    "pdf": {
+      "latest": "1.0.0",
+      "releases": {
+        "1.0.0": {
+          "commit": "b0af0fddba062ad022e5a444c5dafbd75bd40edc",
+          "path": "plugins/pdf",
+          "package": {
+            "key": "youagent/plugin-releases/pdf/1.0.0/9a4ee1f87bf6eaa6ab099b5b00bf50c607f3557bb4c45f792a9ff1d3d5190cfd.tar.gz",
+            "sha256": "9a4ee1f87bf6eaa6ab099b5b00bf50c607f3557bb4c45f792a9ff1d3d5190cfd",
+            "bytes": 7345,
+            "tarSha256": "7e0cbc13773d43d01603d090494811503043dfd1666f5ddf1f6123d57832d476"
+          },
+          "display": {
+            "name": "PDF",
+            "description": "Read, create, and review PDF files, and check the layout by rendering pages with Poppler.",
+            "category": "Documents",
+            "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAS1SURBVHgB7Z2/TxRBFMff7h6gkBg1Go3RaIwN2piorTYWQGEDfwQ0FFBT0dNQQE0NNRY2UGgUSgPRkAghWvDD0BwE2L1z35iB5diDO5iZ/e7yPskmB+xBdj/Me/NmZ+a8agwJMPgkQCFCwBAhYIgQMEQIGCIEDBEChggBQ4SAIULAECFgiBAwRAgYIgQMEQKGCAGjRBlR3dykytISVdbWiHZ3yST+7ZsU3L9H9PQZ0cNHlCc8108Mo7k5iubnlQxblB49UAdTvXWbvA+9RDduUB5wJoQFHE5OqpZhm6QQRVsb0fuu/y0GHCdCwpkZCqenyRWnhGhYSucLQsZ6Unct40w+fST6+oWQsSoESobm22doKdaEcK6Ak6EBlmJNyOHYGEEDKsWKkMriIlVWVwkeQClWhIRxrZEbwKSYFxJX3dxCcgWQFONCchGq0gCRYlxIlcem8gqAFPNCymXKNRlLkeH3NDKUIkLqkZEUEXIWGUgRIefhWEohhVTDiIziUEoxhRh+JKxwJKWQQirlXfOthHEgpZg5JJZR+btDVrAspbBJPVz/Y6eVMCzl9zrZoLBCqvv7FK7auWkKS62k0N3eaGOLDn6sKDnG4RZioZUUvg6pbO/QwfefsZxt82I2N8g0mc1cdAmLOFz5pV57He3kXWslLwjosvjPOil4SUa5EkKSVLlLXDZTp3hl8/WODJ2AIULAECFgiBAwRAgYIgQMEQKGCAFDhIAhQsAQIWCIEDAyH1z0OjqIrl9P/Vl1a6vh89POPfG+O3foXPb2Mp8Km7kQ/9UrahkYqPtzXtfOaxX1cuqzzuel13odfC1t4+N0HocTE6nvdQl8yArevaPW4eGGzvWfP1eyWvr7Ka9APQ85GB093ligvZ2CN2+o1NtL3uPH6mbX7v6QPN+7e5eCt2+VQD54blY4NXXqb0SzsxTGRyo25nM1CZQQvrnJnR7C+DULYfzOzlNCkufrvVNYRKm7Wx0Rh7qanMBfu9hN4qJAhyyVwJskSvz3c77JG1AthEOT7g2xDD8OPZrK8nJDv0O1mriVeHHI4zBWC4fBtO/zusgIYG0klJB6yZtvVFO7B3GYYiEpLYylB/FRiwpjIuRs+CZxNzSql4TroFtAWk3BayDTFqairI2EErI/OHjphMs9LU1amIsWFlRdg0qhhk64ZZT6+tRr3evKG7mel8VdWx2WuE7xnjxRyZxJq0HyQK6FBLGQWnRBiNBjugjGhTRbO/ANPAotDVTKJ85PfI97VpwzuPualsz1e84bhMwa41v88eAe7614FeBuuv/6NZnEeFLnWH5laGRIv0mMC+GeTlolXDT4Gv24E2EaK93eZC1QVGxdoxUhpZ6eCw0M5okgMc5mEjuFIT/L6OqioqKe0VgKy9Yqda6YbcTYrEmOBtjA6tBJy9BQoRI8X0vryAjZxKoQfQFFkOLqWpzs/a43Vc56RsdFCeLirzQwcDROZhOnH1dRO6UHHX6Or3Khw2LX+eeHMHr+lHpYBLZpJj9C9uPHvNwqshh1yERILSgtBiHXQQgRjpHJ1mCIEDBECBgiBAwRAoYIAUOEgCFCwBAhYIgQMEQIGCIEDBEChggBQ4SA8Q/FuAFFXtlkkQAAAABJRU5ErkJggg==",
+            "author": "OpenAI",
+            "homepage": "https://github.com/openai/skills/tree/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/pdf"
+          },
+          "machines": {
+            "types": [
+              "device",
+              "cloud"
+            ],
+            "os": [
+              "macos",
+              "linux",
+              "windows"
+            ]
+          },
+          "skills": [
+            {
+              "name": "pdf",
+              "description": "Use when tasks involve reading, creating, or reviewing PDF files where rendering and layout matter; prefer visual checks by rendering pages (Poppler) and use Python tools such as `reportlab`, `pdfplumber`, and `pypdf` for generation and extraction."
+            }
+          ],
+          "mcpServers": {}
+        }
+      }
+    },
+    "sentry": {
+      "latest": "1.0.0",
+      "releases": {
+        "1.0.0": {
+          "commit": "b0af0fddba062ad022e5a444c5dafbd75bd40edc",
+          "path": "plugins/sentry",
+          "package": {
+            "key": "youagent/plugin-releases/sentry/1.0.0/8f15008440b5566eacdbb5905296c28ddab6181894a029814411838e446c86df.tar.gz",
+            "sha256": "8f15008440b5566eacdbb5905296c28ddab6181894a029814411838e446c86df",
+            "bytes": 278613,
+            "tarSha256": "90534dbf7e90fcb861018452ca14fe6bab633f4e2c605a2b0fabd446063e4439"
+          },
+          "display": {
+            "name": "Sentry",
+            "description": "Debug production issues with the Sentry MCP server, and use Sentry's skills to set up the SDK, instrument code, create alerts, and fix stack traces.",
+            "category": "Developer tools",
+            "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNjUuOTggMjQ5LjY4Ij48dGl0bGU+c2VudHJ5LWdseXBoLWJsYWNrPC90aXRsZT48cGF0aCBkPSJNMTQ0LjksNjUuNDNhMTMuNzUsMTMuNzUsMCwwLDAtMjMuODEsMGwtMTkuNiwzMy45NSw1LDIuODdhOTYuMTQsOTYuMTQsMCwwLDEsNDcuODMsNzcuNEgxNDAuNTZhODIuNCw4Mi40LDAsMCwwLTQxLTY1LjU0bC01LTIuODZMNzYuMywxNDNsNSwyLjg3YTQ2LjM1LDQ2LjM1LDAsMCwxLDIyLjQ2LDMzLjc4SDcyLjMzYTIuMjcsMi4yNywwLDAsMS0yLTMuNDFsOC43Ni0xNS4xN2EzMS44NywzMS44NywwLDAsMC0xMC01LjcxTDYwLjQyLDE3MC41YTEzLjc1LDEzLjc1LDAsMCwwLDExLjkxLDIwLjYyaDQzLjI1di01LjczQTU3LjE2LDU3LjE2LDAsMCwwLDkxLjg0LDEzOWw2Ljg4LTExLjkyYTcwLjkzLDcwLjkzLDAsMCwxLDMwLjU2LDU4LjI2djUuNzRoMzYuNjV2LTUuNzNBMTA3LjYyLDEwNy42MiwwLDAsMCwxMTcuMDksOTUuM0wxMzEsNzEuMTdhMi4yNywyLjI3LDAsMCwxLDMuOTMsMGw2MC42NiwxMDUuMDdhMi4yNywyLjI3LDAsMCwxLTIsMy40MUgxNzkuNGMuMTgsMy44My4yLDcuNjYsMCwxMS40OGgxNC4yNGExMy43NSwxMy43NSwwLDAsMCwxMS45MS0yMC42MloiIHN0eWxlPSJmaWxsOiMyMjFmMjAiLz48L3N2Zz4=",
+            "author": "Sentry",
+            "homepage": "https://docs.sentry.io/product/sentry-mcp/"
+          },
+          "machines": {
+            "types": [
+              "device",
+              "cloud"
+            ],
+            "os": [
+              "macos",
+              "linux",
+              "windows"
+            ]
+          },
+          "skills": [
+            {
+              "name": "sentry-create-alert",
+              "description": "Create Sentry alerts using the workflow engine API. Use when asked to create alerts, set up notifications, configure issue priority alerts, or build workflow automations. Supports email, Slack, PagerDuty, Discord, and other notification actions."
+            },
+            {
+              "name": "sentry-debug-issue",
+              "description": "Debug and fix a Sentry issue — find it (by link, ID, or search), pull full context (stack trace, breadcrumbs, trace, logs), optionally run Seer root-cause / autofix, apply the code fix, and resolve it via a `Fixes PROJECT-NAME-12A` commit/PR. Use when working a known error or hunting one down to fix."
+            },
+            {
+              "name": "sentry-fix-stack-traces",
+              "description": "Make Sentry stack traces readable — upload source maps for JavaScript/TypeScript, or debug files for native and mobile (dSYM, ProGuard/R8, NDK symbols, Dart obfuscation maps, .NET PDBs). Use when frames in Sentry show minified names, bundled paths, hex addresses, \"unknown\", or method names with no file/line, instead of your original source."
+            },
+            {
+              "name": "sentry-get-started",
+              "description": "Guided entry point for using Sentry through your agent. Orients you to your current setup and, for a new project, sets up Sentry end to end with sane defaults — provision a project, install the SDK (errors, tracing, and whatever it enables by default), and confirm real telemetry reaches Sentry. Routes other intents (adding more signals, fixing issues) to the right skill."
+            },
+            {
+              "name": "sentry-instrument",
+              "description": "Instrument an application with Sentry — detect the platform, install and initialize the SDK if needed, and wire up any signal — error monitoring, tracing/performance, logging, metrics, profiling, session replay, user feedback, cron check-ins, uptime monitors for the deployed app, and AI/LLM monitoring (agent runs, token cost, and conversations for OpenAI, Anthropic, Vercel AI, LangChain, Google GenAI, Pydantic AI, Laravel AI, Mastra, Eve, Flue, Pi Durable, the Cloudflare Agents SDK, and Workers AI). Use to add Sentry to a project or to capture more than errors."
+            },
+            {
+              "name": "sentry-otel-exporter-setup",
+              "description": "Configure the OpenTelemetry Collector with Sentry Exporter for multi-project routing and automatic project creation. Use when setting up OTel with Sentry, configuring collector pipelines for traces and logs, or routing telemetry from multiple services to Sentry projects."
+            },
+            {
+              "name": "sentry-setup-releases",
+              "description": "Set up Sentry releases and deploy tracking — tag events with a version and environment, create the release in CI with its commits, and wire up suspect commits and code mappings, so Sentry can show which release introduced an issue, which commit is responsible, and release health. Use when asked to set up releases, track deploys, see what changed, or when issues show an unknown release or no suspect commit."
+            },
+            {
+              "name": "sentry-snapshots-cocoa",
+              "description": "Full Sentry Snapshots setup for Apple/Cocoa projects. Use when asked to \"setup SnapshotPreviews\", \"setup Apple snapshot testing\", \"upload Apple snapshots to Sentry\", \"setup Apple snapshot GitHub Actions\", or \"setup Apple selective snapshot testing\"."
+            }
+          ],
+          "mcpServers": {
+            "sentry": {
+              "runsOn": "server",
+              "type": "streamable-http",
+              "url": "https://mcp.sentry.dev/mcp",
+              "headers": {}
+            }
+          }
+        }
+      }
+    },
+    "slack": {
+      "latest": "1.0.0",
+      "releases": {
+        "1.0.0": {
+          "commit": "b0af0fddba062ad022e5a444c5dafbd75bd40edc",
+          "path": "plugins/slack",
+          "package": {
+            "key": "youagent/plugin-releases/slack/1.0.0/2256011e6ba123291f8634f668b3a4f481c35d90af6b8fda7c8d292d33f6ed9b.tar.gz",
+            "sha256": "2256011e6ba123291f8634f668b3a4f481c35d90af6b8fda7c8d292d33f6ed9b",
+            "bytes": 75488,
+            "tarSha256": "7e126160c01fc50d1474139ebde8c495ae526fb3d10b59eb189af80ab6dadc4b"
+          },
+          "display": {
+            "name": "Slack",
+            "description": "Slack AI tools for users and developers: interact with your workspace via the Slack MCP server and use skills to develop Slack apps.",
+            "category": "Productivity",
+            "icon": "data:image/png;base64,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",
+            "author": "Slack",
+            "homepage": "https://docs.slack.dev/ai/slack-skills-plugin"
+          },
+          "machines": {
+            "types": [
+              "device",
+              "cloud"
+            ],
+            "os": [
+              "macos",
+              "linux",
+              "windows"
+            ]
+          },
+          "skills": [
+            {
+              "name": "block-kit",
+              "description": "Use when a developer wants to build or validate Block Kit layouts for Slack messages, modals, or Home tabs: message layouts, modals/forms/dialogs, Home tab interfaces, interactive buttons or menus, or modifying existing Block Kit JSON. Also trigger on any Slack UI component (sections, actions, inputs, headers, alerts, tables, carousels), the words \"blocks\" or \"Block Kit Builder\", a request to preview rendered blocks, or pasted JSON like \"type\": \"section\". Validates via the blocks.validate API method."
+            },
+            {
+              "name": "create-slack-app",
+              "description": "Use when a developer wants to create, scaffold, or bootstrap a new Slack app or agent from scratch with the Slack CLI. Covers prerequisites, authentication, choosing a workspace to install into, and creating a project from a Bolt (JS or Python) template locally. Trigger on \"create a Slack app\", \"new Bolt app\", \"start a Slack agent\"."
+            },
+            {
+              "name": "deploy-slack-app",
+              "description": "Use when a developer wants to deploy, host, or run a Slack app somewhere it keeps working after the local process stops, or mentions Railway, Heroku, `railway up`, `git push heroku`, `slack deploy`, a `deploy` hook in `.slack/hooks.json`, hosting a Socket Mode or Request URL (HTTP) Bolt app, deploying from Windows, graduating an app out of a developer sandbox, or tearing down a deployed app."
+            },
+            {
+              "name": "slack-api",
+              "description": "Use when a developer asks which Slack Web API method does something, needs a method's OAuth scopes or token type, wants to call or test a family.method endpoint (chat.postMessage, conversations.history, users.info, views.open), is handling cursor pagination (next_cursor) or rate limits (tier/ratelimited/Retry-After), or is debugging errors like missing_scope, invalid_auth, or channel_not_found. Also trigger on a pasted slack.com/api/ URL or docs.slack.dev/reference/methods link."
+            },
+            {
+              "name": "slack-cli",
+              "description": "Use when a developer works with the Slack CLI (slack command) to create, run, or manage a Slack app from the terminal: logging in or authenticating (slack login), adding a team or switching workspaces, running locally (slack run), deploying, editing the app manifest, calling Web API methods (slack api), or searching Slack docs (slack docs search)."
+            },
+            {
+              "name": "slack-docs",
+              "description": "Use when answering a conceptual or how-to question about Slack platform features, or when asked to look up, fetch, or summarize a docs.slack.dev page, including a pasted docs.slack.dev link. Covers finding and reading official Slack docs as clean markdown."
+            },
+            {
+              "name": "slack-messaging",
+              "description": "Use when writing, drafting, scheduling, or improving a Slack message, announcement, or reply sent via the Slack MCP tools (slack_send_message, slack_send_message_draft, slack_schedule_message). Covers Slack markdown formatting, message structure, thread etiquette, reactions, and scheduling, and points to the right dialect for canvases and Block Kit."
+            },
+            {
+              "name": "slack-search",
+              "description": "Use when locating messages, files, channels, or people across Slack, or gathering context before answering, with the search MCP tools (slack_search_public, slack_search_public_and_private, slack_search_channels, slack_search_users). Covers search modifiers (in:, from:, before:), file-type filters, natural-language vs. keyword search, and reading results in context."
+            },
+            {
+              "name": "test-slack-app",
+              "description": "Use when a developer wants to test, try out, smoke-test, verify, or confirm that a Slack app built with the Slack CLI (or a plain Bolt app) actually works, by running it in a developer sandbox or a Free Team, never a workspace with real users, with `slack run` and exercising its real slash commands, shortcuts, events, actions, modals, App Home, and assistant surfaces. Also covers `slack doctor` and `slack manifest validate` health checks before hands-on testing."
+            }
+          ],
+          "mcpServers": {
+            "slack": {
+              "runsOn": "server",
+              "type": "streamable-http",
+              "url": "https://mcp.slack.com/mcp",
+              "headers": {}
+            }
+          }
+        }
+      }
+    },
+    "slides": {
+      "latest": "1.0.0",
+      "releases": {
+        "1.0.0": {
+          "commit": "b0af0fddba062ad022e5a444c5dafbd75bd40edc",
+          "path": "plugins/slides",
+          "package": {
+            "key": "youagent/plugin-releases/slides/1.0.0/36eb91f85ae391ed11d3a02872f528013a019790c868bae567e8045e7b546e83.tar.gz",
+            "sha256": "36eb91f85ae391ed11d3a02872f528013a019790c868bae567e8045e7b546e83",
+            "bytes": 52859,
+            "tarSha256": "246d0d7e00df54c852a4577a93916c11ddfc0107e1a5910c894af7e5afe5003d"
+          },
+          "display": {
+            "name": "Slides",
+            "description": "Create and edit PowerPoint (.pptx) slide decks with PptxGenJS, and check the layout by rendering slides.",
+            "category": "Documents",
+            "icon": "data:image/png;base64,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",
+            "author": "OpenAI",
+            "homepage": "https://github.com/openai/skills/tree/e6afb0d74cc75d220df2faf3dd6c635c2dc6a108/skills/.curated/slides"
+          },
+          "machines": {
+            "types": [
+              "device",
+              "cloud"
+            ],
+            "os": [
+              "macos",
+              "linux",
+              "windows"
+            ]
+          },
+          "skills": [
+            {
+              "name": "slides",
+              "description": "Create and edit presentation slide decks (`.pptx`) with PptxGenJS, bundled layout helpers, and render/validation utilities. Use when tasks involve building a new PowerPoint deck, recreating slides from screenshots/PDFs/reference decks, modifying slide content while preserving editable output, adding charts/diagrams/visuals, or diagnosing layout issues such as overflow, overlaps, and font substitution."
+            }
+          ],
+          "mcpServers": {}
+        }
+      }
+    },
+    "spreadsheet": {
+      "latest": "1.0.0",
+      "releases": {
+        "1.0.0": {
+          "commit": "b0af0fddba062ad022e5a444c5dafbd75bd40edc",
+          "path": "plugins/spreadsheet",
+          "package": {
+            "key": "youagent/plugin-releases/spreadsheet/1.0.0/7ee58a90a3bd6de1b610013578f5f5b65403039654236e4d1e86fde2761ba350.tar.gz",
+            "sha256": "7ee58a90a3bd6de1b610013578f5f5b65403039654236e4d1e86fde2761ba350",
+            "bytes": 14489,
+            "tarSha256": "945bc2640fd4491402d30ca8afaf95a060292131ce60fc4c3ad2df1a3f003ce3"
+          },
+          "display": {
+            "name": "Spreadsheet",
+            "description": "Create, edit, analyze, and format Excel (.xlsx), CSV, and TSV spreadsheets, with formula-aware workflows and visual review.",
+            "category": "Documents",
+            "icon": "data:image/png;base64,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",
+            "author": "OpenAI",
+            "homepage": "https://github.com/openai/skills/tree/e6afb0d74cc75d220df2faf3dd6c635c2dc6a108/skills/.curated/spreadsheet"
+          },
+          "machines": {
+            "types": [
+              "device",
+              "cloud"
+            ],
+            "os": [
+              "macos",
+              "linux",
+              "windows"
+            ]
+          },
+          "skills": [
+            {
+              "name": "spreadsheet",
+              "description": "Use when tasks involve creating, editing, analyzing, or formatting spreadsheets (`.xlsx`, `.csv`, `.tsv`) with formula-aware workflows, cached recalculation, and visual review."
+            }
+          ],
+          "mcpServers": {}
+        }
+      }
+    },
+    "stripe": {
+      "latest": "1.0.0",
+      "releases": {
+        "1.0.0": {
+          "commit": "b0af0fddba062ad022e5a444c5dafbd75bd40edc",
+          "path": "plugins/stripe",
+          "package": {
+            "key": "youagent/plugin-releases/stripe/1.0.0/3486204f61c8a58cde4343229730eaafeb8324f9a19db6e09ef5416a6f31b071.tar.gz",
+            "sha256": "3486204f61c8a58cde4343229730eaafeb8324f9a19db6e09ef5416a6f31b071",
+            "bytes": 119516,
+            "tarSha256": "5f36e271617182cd4afaaa38a42cb292b7f66c57705f027e794b1b8de53c8699"
+          },
+          "display": {
+            "name": "Stripe",
+            "description": "Stripe agent plugin with skills for Stripe integrations including best practices, API and SDK upgrade guidance, and a remote MCP server configuration.",
+            "category": "Developer tools",
+            "icon": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxnIGNsaXAtcGF0aD0idXJsKCNjbGlwMF8xNTlfMjApIj4KPHJlY3Qgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIGZpbGw9IiM1MzNBRkQiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMjAgMzkyTDM5MiAzMzQuMzE3VjEyMEwxMjAgMTc4LjM1N1YzOTJaIiBmaWxsPSJ3aGl0ZSIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzE1OV8yMCI+CjxyZWN0IHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiByeD0iNjQiIGZpbGw9IndoaXRlIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg==",
+            "author": "Stripe",
+            "homepage": "https://docs.stripe.com/mcp"
+          },
+          "machines": {
+            "types": [
+              "device",
+              "cloud"
+            ],
+            "os": [
+              "macos",
+              "linux",
+              "windows"
+            ]
+          },
+          "skills": [
+            {
+              "name": "connect-recommend",
+              "description": "Use this skill when the user asks about Stripe Connect configuration, charge patterns, Dashboard access, or how to get started with Connect, is building a marketplace, platform, multi-vendor store, gig platform, or subscription platform, needs to pay out sellers, vendors, or providers, mentions split payments, revenue sharing, multi-party payments, or similar payment distribution concepts, provides a company URL or business description for a recommendation, builds SaaS that routes money between parties (for example, POS, booking, invoicing — not operational SaaS without payment routing), asks about onboarding or KYC for merchants, sellers, and vendors, mentions connected account Dashboard or responsibility configurations, or asks about payment flows, white-label payments, or embedded payments."
+            },
+            {
+              "name": "connect-required-verification-information",
+              "description": "Use this skill when the user asks what information a Stripe Connect connected account must provide for verification, onboarding, KYC, or account requirements; when they need to compare requirements between connected-account setups; or when they ask which verification fields, documents, or business details are required for a particular platform country, account country, business type, dashboard, service agreement, or capability."
+            },
+            {
+              "name": "metronome",
+              "description": "Guides Metronome usage-based billing integration decisions — event ingestion (single and batch, idempotency, billable metrics), contract design (rate cards, overrides, dimensional pricing, products), invoicing lifecycle (grace periods, finalization, Stripe sync), credit and commit management (prepaid, postpaid, thresholds, auto-recharge), and Stripe integration (arrears invoicing, tax providers, line item limits). Use when building, modifying, or reviewing any Metronome integration — including ingesting usage events, creating customers, contracts, or rate cards, designing billable metric group keys, managing credits and commits, configuring invoicing, syncing invoices with Stripe Billing, billing AI applications for token usage, setting up self-serve (PLG) pricing, reviewing customer health, commit burn, portfolios, or renewals, or migrating from Stripe Billing Meters to Metronome."
+            },
+            {
+              "name": "stripe-apps",
+              "description": "Build, modify, or review Stripe Apps and extensions using the relevant documentation and reference guides. Use for custom Stripe Dashboard UI, stripe-app.yaml, @stripe/ui-extension-sdk, @stripe/extensibility-sdk, script extensions, extension interfaces, custom workflow actions, and apps that authenticate to Stripe or react to events. Also use when deciding whether a Stripe extension can support the user's billing or workflow requirements."
+            },
+            {
+              "name": "stripe-best-practices",
+              "description": "Guides Stripe integration decisions across development and test environment planning (separate sandboxes vs the shared test mode sandbox), API selection (Checkout Sessions vs PaymentIntents), Connect platform setup (Accounts v2, controller properties), billing/subscriptions, tax and registrations (Stripe Tax, automatic_tax, product tax codes), Treasury financial accounts, integration options (Checkout, Payment Element), migrating from deprecated Stripe APIs, and security best practices (API key management, API key permissions, webhooks, OAuth). Use when planning, building, modifying, testing, or reviewing any Stripe integration, including choosing a development environment, accepting payments, building marketplaces, integrating Stripe, processing payments, setting up subscriptions, collecting sales tax, VAT, or GST, creating connected accounts, or implementing secure key handling."
+            },
+            {
+              "name": "stripe-directory",
+              "description": "Identifies external providers, merchants, nonprofits, platforms, APIs, and software services, and resolves the documented way to engage them — to pay, donate, subscribe, book, provision, or integrate with them. MUST be used BEFORE web search, model memory, or any other directory/vendor-lookup skill for ANY request that requires selecting, finding, or engaging an external provider or organization — whether a specific one is named (\"pay my Twilio bill\"), implied (\"donate to the Red Cross\"), or only a category is stated (\"set up a mailing client\", \"I need a database\", \"find me a CRM\"). Directory supplies verified recipients and their documented payment or engagement path. Results are ranked by agent-readiness (how reliably an agent can complete the interaction), relevance and popularity. Don't treat this as a search-only tool. Examples: \"setup a database\", \"find hosting\", \"pay X\", \"use Twilio\", \"donate $50 to the Red Cross\", \"book a table at Y\", \"subscribe to a CRM\"."
+            },
+            {
+              "name": "stripe-docs",
+              "description": "Use when the user or agent needs to read, search, or look up Stripe documentation or API reference. Prefer this over curl or WebFetch for any docs.stripe.com content. Use to fetch gated documentation."
+            },
+            {
+              "name": "stripe-pay",
+              "description": "Helps users send funds to another Stripe business, transfer money to a Stripe Profile handle or network ID, or ask whether an agent can pay a Stripe business. Use Stripe Directory to find or verify a recipient when the user doesn't provide an exact Stripe Profile handle or network ID."
+            },
+            {
+              "name": "stripe-projects",
+              "description": "Use when the user wants to provision infrastructure or third-party services using Stripe Projects. Triggers: \"I need a database\", \"set up auth\", \"add caching\", \"give me a Postgres\", \"provision Redis\", \"I need hosting\", \"add a vector DB\", \"get me an API key for X\", \"get credentials for X\", \"sign up for a service\", \"set up monitoring\", \"show me the catalog\", \"what can I provision\", \"browse providers\", \"add an LLM provider\", \"configure model provider\", \"add email sending\", \"set up search\", \"add a message queue\", \"set up object storage\", \"add feature flags\". Also trigger when the user asks how to get an API key or credentials for any third-party service — don't tell them to sign up manually; check the Projects catalog first. Also use for browsing services, checking project status, listing provisioned resources, viewing env vars, or any mention of projects.dev or adding/provisioning/connecting a cloud service."
+            },
+            {
+              "name": "upgrade-stripe",
+              "description": "Guide for upgrading Stripe API versions, webhook endpoints, server-side SDKs, Stripe.js, and mobile SDKs"
+            }
+          ],
+          "mcpServers": {
+            "stripe": {
+              "runsOn": "server",
+              "type": "streamable-http",
+              "url": "https://mcp.stripe.com",
+              "headers": {}
+            }
+          }
+        }
+      }
+    },
+    "supabase": {
+      "latest": "1.0.0",
+      "releases": {
+        "1.0.0": {
+          "commit": "b0af0fddba062ad022e5a444c5dafbd75bd40edc",
+          "path": "plugins/supabase",
+          "package": {
+            "key": "youagent/plugin-releases/supabase/1.0.0/bb60b985284c3b5ffb3088a0115fe8cbc6c45df5a62f252f89cc8d681fb7826c.tar.gz",
+            "sha256": "bb60b985284c3b5ffb3088a0115fe8cbc6c45df5a62f252f89cc8d681fb7826c",
+            "bytes": 28284,
+            "tarSha256": "19be21145784cd659653ea36bcb0c734f2018f0fce0f79a340d469963cd4cf5a"
+          },
+          "display": {
+            "name": "Supabase",
+            "description": "Supabase skills and the Supabase MCP server for project management, database work, auth, storage, and Postgres best practices.",
+            "category": "Developer tools",
+            "icon": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQxIiBoZWlnaHQ9IjE0MSIgdmlld0JveD0iLTE2IC0xNCAxNDEgMTQxIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNNjMuNzA3NiAxMTAuMjg0QzYwLjg0ODEgMTEzLjg4NSA1NS4wNTAyIDExMS45MTIgNTQuOTgxMyAxMDcuMzE0TDUzLjk3MzggNDAuMDYyN0w5OS4xOTM1IDQwLjA2MjdDMTA3LjM4NCA0MC4wNjI3IDExMS45NTIgNDkuNTIyOCAxMDYuODU5IDU1LjkzNzRMNjMuNzA3NiAxMTAuMjg0WiIgZmlsbD0idXJsKCNwYWludDBfbGluZWFyKSIvPgo8cGF0aCBkPSJNNjMuNzA3NiAxMTAuMjg0QzYwLjg0ODEgMTEzLjg4NSA1NS4wNTAyIDExMS45MTIgNTQuOTgxMyAxMDcuMzE0TDUzLjk3MzggNDAuMDYyN0w5OS4xOTM1IDQwLjA2MjdDMTA3LjM4NCA0MC4wNjI3IDExMS45NTIgNDkuNTIyOCAxMDYuODU5IDU1LjkzNzRMNjMuNzA3NiAxMTAuMjg0WiIgZmlsbD0idXJsKCNwYWludDFfbGluZWFyKSIgZmlsbC1vcGFjaXR5PSIwLjIiLz4KPHBhdGggZD0iTTQ1LjMxNyAyLjA3MTAzQzQ4LjE3NjUgLTEuNTMwMzcgNTMuOTc0NSAwLjQ0MjkzNyA1NC4wNDM0IDUuMDQxTDU0LjQ4NDkgNzIuMjkyMkg5LjgzMTEzQzEuNjQwMzggNzIuMjkyMiAtMi45Mjc3NSA2Mi44MzIxIDIuMTY1NSA1Ni40MTc1TDQ1LjMxNyAyLjA3MTAzWiIgZmlsbD0iIzNFQ0Y4RSIvPgo8ZGVmcz4KPGxpbmVhckdyYWRpZW50IGlkPSJwYWludDBfbGluZWFyIiB4MT0iNTMuOTczOCIgeTE9IjU0Ljk3NCIgeDI9Ijk0LjE2MzUiIHkyPSI3MS44Mjk1IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CjxzdG9wIHN0b3AtY29sb3I9IiMyNDkzNjEiLz4KPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjM0VDRjhFIi8+CjwvbGluZWFyR3JhZGllbnQ+CjxsaW5lYXJHcmFkaWVudCBpZD0icGFpbnQxX2xpbmVhciIgeDE9IjM2LjE1NTgiIHkxPSIzMC41NzgiIHgyPSI1NC40ODQ0IiB5Mj0iNjUuMDgwNiIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgo8c3RvcC8+CjxzdG9wIG9mZnNldD0iMSIgc3RvcC1vcGFjaXR5PSIwIi8+CjwvbGluZWFyR3JhZGllbnQ+CjwvZGVmcz4KPC9zdmc+Cg==",
+            "author": "Supabase",
+            "homepage": "https://supabase.com/docs/guides/getting-started/mcp"
+          },
+          "machines": {
+            "types": [
+              "device",
+              "cloud"
+            ],
+            "os": [
+              "macos",
+              "linux",
+              "windows"
+            ]
+          },
+          "skills": [
+            {
+              "name": "supabase-postgres-best-practices",
+              "description": "Postgres best practices maintained by Supabase, for Postgres running anywhere. Load this skill BEFORE writing or changing anything that lives in a Postgres database: creating or altering tables and columns (including choosing column types), schema design, migrations and declarative schema files, RLS policies and the tests that verify them, indexes, triggers, database functions, queues and scheduled jobs (pg_cron, pgmq), vector/semantic search (pgvector), and restoring dumps (pg_restore) or importing data. Also load it when diagnosing slow queries, high CPU, timeouts, EXPLAIN plans, connection exhaustion, locking, bloat, or rows visible to the wrong user or tenant. This is not just a performance guide — schema, migration, security, and SQL authoring tasks need these rules too, even for a one-column change or a single query."
+            },
+            {
+              "name": "supabase",
+              "description": "Use when doing ANY task involving Supabase. Triggers: Supabase products (Database, Auth, Edge Functions, Realtime, Storage, Vectors, Cron, Queues); client libraries and SSR integrations (supabase-js, @supabase/ssr) in Next.js, React, SvelteKit, Astro, Remix; auth issues (login, logout, sessions, JWT, cookies, getSession, getUser, getClaims, RLS); Supabase CLI or MCP server; schema changes, migrations, declarative schemas, security audits, Postgres extensions (pg_graphql, pg_cron, pg_vector); debugging and troubleshooting errors or unexpected behavior on Supabase projects (HTTP errors, Postgres errors, RLS surprises, permission denied, schema cache issues, timeouts, Edge Function crashes, Realtime drops, Storage failures) and reading or querying logs (Logs Explorer, ClickHouse)."
+            }
+          ],
+          "mcpServers": {
+            "supabase": {
+              "runsOn": "server",
+              "type": "streamable-http",
+              "url": "https://mcp.supabase.com/mcp",
+              "headers": {}
+            }
+          }
+        }
+      }
+    },
+    "vercel": {
+      "latest": "1.0.0",
+      "releases": {
+        "1.0.0": {
+          "commit": "b0af0fddba062ad022e5a444c5dafbd75bd40edc",
+          "path": "plugins/vercel",
+          "package": {
+            "key": "youagent/plugin-releases/vercel/1.0.0/a73d1567b5ce725408aeba51606bed9719e87a9d337e2892a09c6f57fbb2d479.tar.gz",
+            "sha256": "a73d1567b5ce725408aeba51606bed9719e87a9d337e2892a09c6f57fbb2d479",
+            "bytes": 1058,
+            "tarSha256": "d8da6141576e1f51faee68929c9d1b4817014c47136deed40bcaea9163f5b18f"
+          },
+          "display": {
+            "name": "Vercel",
+            "description": "Search Vercel docs, inspect projects and deployments, read logs, and deploy through the Vercel MCP server.",
+            "category": "Developer tools",
+            "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0BAMAAADP4xsBAAAAHlBMVEUAAAD///8gICDk5ORjY2PBwcGAgIChoaFCQkKPj48exqpXAAABs0lEQVRo3u2Yy3GDUBAEVU9Yso8jLBW+gUkAHAFkIGcgMrAzQBnYGfuAP5LF58HbuU0H0Kee2qpdrYQQQgghhBBCCMFhc6Kp84Kmfn9imR2QktRb4EhSn4GEpC6BPcccAUBFUa8BgJNfAwAHSnolAMSk9ADgg6DOOvWOsfJOTcjvHt+0nPQAxtbrH/UjY+Ud5vlt8Iv1qcn/1AUnPQAwPjUOF6SMlTPyO1+qE0565luPcEXFWLl9fs212vDUuPJaHZPSsz012X/1jrFy4/wcbmg56Vluvb5VJ4yVm+YXoQebU5P3qQtOemZbd+glZazcLr+sX51w0jPaeoQBWsbKrfKrh9TB+blySB2T0rPYejas3jFWbpKfwwhh+d2NqY+c9MK3Xo6pY8rKw/PLx9UhW/8cVx9I6QGIU8bKO94YKw/N73VKvSelF7L19bS6YKw8KD9XTqsXbv0BHpw46QHAi/WBCczPwYvW+sCEnZraT51YH5ig/CJ4UlkfmJCtN77qAym9Jadm662efWoyf3VifWAWbz3CDFrrA7M0v3qOet6z3D3PYSWEEEIIIYQQQgghhJjkCyiPmnlPQxAZAAAAAElFTkSuQmCC",
+            "author": "Vercel",
+            "homepage": "https://vercel.com/docs/agent-resources/vercel-mcp"
+          },
+          "machines": {
+            "types": [
+              "device",
+              "cloud"
+            ],
+            "os": [
+              "macos",
+              "linux",
+              "windows"
+            ]
+          },
+          "skills": [],
+          "mcpServers": {
+            "vercel": {
+              "runsOn": "server",
+              "type": "streamable-http",
+              "url": "https://mcp.vercel.com",
+              "headers": {}
+            }
+          }
+        }
+      }
+    }
+  }
+}
