@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "sentry",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Debug production issues with the Sentry MCP server, and use Sentry's skills to set up the SDK, instrument code, create alerts, and fix stack traces.",
   "author": {
     "name": "Sentry"

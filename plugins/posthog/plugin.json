@@ -1,0 +1,17 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "posthog",
+  "version": "1.0.0",
+  "description": "Query product analytics, manage feature flags and experiments, and investigate errors through the PostHog MCP server.",
+  "author": {
+    "name": "PostHog"
+  },
+  "homepage": "https://posthog.com/docs/model-context-protocol",
+  "extensions": {
+    "com.youmind": {
+      "displayName": "PostHog",
+      "category": "Developer tools",
+      "icon": "./com.youmind/icon.svg"
+    }
+  }
+}

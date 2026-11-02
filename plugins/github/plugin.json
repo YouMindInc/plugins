@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "github",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Search repositories, read and manage code, issues, and pull requests through the GitHub MCP server.",
   "author": {
     "name": "GitHub"

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "cloudflare",
+  "version": "1.0.0",
+  "description": "Search Cloudflare docs and manage DNS, Workers, R2, and other Cloudflare services through the Cloudflare API MCP server.",
+  "author": {
+    "name": "Cloudflare"
+  },
+  "homepage": "https://developers.cloudflare.com/agents/model-context-protocol/cloudflare/servers-for-cloudflare/",
+  "extensions": {
+    "com.youmind": {
+      "displayName": "Cloudflare",
+      "category": "Developer tools",
+      "icon": "./com.youmind/icon.svg"
+    }
+  }
+}

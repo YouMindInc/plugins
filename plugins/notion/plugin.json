@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "notion",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Notion skills and the Notion MCP server: search and edit your workspace, capture knowledge, prepare meetings, research topics, and turn specs into tasks.",
   "author": {
     "name": "Notion"
@@ -13,7 +13,7 @@
     "com.youmind": {
       "displayName": "Notion",
       "category": "Productivity",
-      "icon": "./com.youmind/icon.png"
+      "icon": "./com.youmind/icon.svg"
     }
   }
 }
