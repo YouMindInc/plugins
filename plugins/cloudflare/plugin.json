@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "cloudflare",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Search Cloudflare docs and manage DNS, Workers, R2, and other Cloudflare services through the Cloudflare API MCP server.",
   "author": {
     "name": "Cloudflare"
@@ -12,6 +12,18 @@
       "displayName": "Cloudflare",
       "category": "Developer tools",
       "icon": "./com.youmind/icon.svg"
+    },
+    "com.openai": {
+      "interface": {
+        "displayName": "Cloudflare",
+        "shortDescription": "Search Cloudflare docs and manage DNS, Workers, R2, and other Cloudflare services through the Cloudflare API MCP server.",
+        "longDescription": "Search Cloudflare docs and manage DNS, Workers, R2, and other Cloudflare services through the Cloudflare API MCP server.",
+        "developerName": "Cloudflare",
+        "category": "Developer tools",
+        "websiteUrl": "https://developers.cloudflare.com/agents/model-context-protocol/cloudflare/servers-for-cloudflare/",
+        "composerIcon": "./com.youmind/icon.svg",
+        "logo": "./com.youmind/icon.svg"
+      }
     }
   }
 }

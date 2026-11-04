@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "github",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Search repositories, read and manage code, issues, and pull requests through the GitHub MCP server.",
   "author": {
     "name": "GitHub"
@@ -12,6 +12,18 @@
       "displayName": "GitHub",
       "category": "Developer tools",
       "icon": "./com.youmind/icon.svg"
+    },
+    "com.openai": {
+      "interface": {
+        "displayName": "GitHub",
+        "shortDescription": "Search repositories, read and manage code, issues, and pull requests through the GitHub MCP server.",
+        "longDescription": "Search repositories, read and manage code, issues, and pull requests through the GitHub MCP server.",
+        "developerName": "GitHub",
+        "category": "Developer tools",
+        "websiteUrl": "https://github.com/github/github-mcp-server",
+        "composerIcon": "./com.youmind/icon.svg",
+        "logo": "./com.youmind/icon.svg"
+      }
     }
   }
 }

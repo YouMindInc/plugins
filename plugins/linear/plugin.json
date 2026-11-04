@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "linear",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Find, create, and update Linear issues, projects, and comments through the Linear MCP server.",
   "author": {
     "name": "Linear"
@@ -12,6 +12,18 @@
       "displayName": "Linear",
       "category": "Productivity",
       "icon": "./com.youmind/icon.svg"
+    },
+    "com.openai": {
+      "interface": {
+        "displayName": "Linear",
+        "shortDescription": "Find, create, and update Linear issues, projects, and comments through the Linear MCP server.",
+        "longDescription": "Find, create, and update Linear issues, projects, and comments through the Linear MCP server.",
+        "developerName": "Linear",
+        "category": "Productivity",
+        "websiteUrl": "https://linear.app/docs/mcp",
+        "composerIcon": "./com.youmind/icon.svg",
+        "logo": "./com.youmind/icon.svg"
+      }
     }
   }
 }

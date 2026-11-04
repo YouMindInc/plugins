@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "notion",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Notion skills and the Notion MCP server: search and edit your workspace, capture knowledge, prepare meetings, research topics, and turn specs into tasks.",
   "author": {
     "name": "Notion"
@@ -14,6 +14,18 @@
       "displayName": "Notion",
       "category": "Productivity",
       "icon": "./com.youmind/icon.svg"
+    },
+    "com.openai": {
+      "interface": {
+        "displayName": "Notion",
+        "shortDescription": "Notion skills and the Notion MCP server: search and edit your workspace, capture knowledge, prepare meetings, research topics, and turn specs into tasks.",
+        "longDescription": "Notion skills and the Notion MCP server: search and edit your workspace, capture knowledge, prepare meetings, research topics, and turn specs into tasks.",
+        "developerName": "Notion",
+        "category": "Productivity",
+        "websiteUrl": "https://developers.notion.com/docs/mcp",
+        "composerIcon": "./com.youmind/icon.svg",
+        "logo": "./com.youmind/icon.svg"
+      }
     }
   }
 }
