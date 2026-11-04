@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "vercel",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Search Vercel docs, inspect projects and deployments, read logs, and deploy through the Vercel MCP server.",
   "author": {
     "name": "Vercel"
@@ -12,6 +12,18 @@
       "displayName": "Vercel",
       "category": "Developer tools",
       "icon": "./com.youmind/icon.svg"
+    },
+    "com.openai": {
+      "interface": {
+        "displayName": "Vercel",
+        "shortDescription": "Search Vercel docs, inspect projects and deployments, read logs, and deploy through the Vercel MCP server.",
+        "longDescription": "Search Vercel docs, inspect projects and deployments, read logs, and deploy through the Vercel MCP server.",
+        "developerName": "Vercel",
+        "category": "Developer tools",
+        "websiteUrl": "https://vercel.com/docs/agent-resources/vercel-mcp",
+        "composerIcon": "./com.youmind/icon.svg",
+        "logo": "./com.youmind/icon.svg"
+      }
     }
   }
 }

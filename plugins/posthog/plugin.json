@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "posthog",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Query product analytics, manage feature flags and experiments, and investigate errors through the PostHog MCP server.",
   "author": {
     "name": "PostHog"
@@ -12,6 +12,18 @@
       "displayName": "PostHog",
       "category": "Developer tools",
       "icon": "./com.youmind/icon.svg"
+    },
+    "com.openai": {
+      "interface": {
+        "displayName": "PostHog",
+        "shortDescription": "Query product analytics, manage feature flags and experiments, and investigate errors through the PostHog MCP server.",
+        "longDescription": "Query product analytics, manage feature flags and experiments, and investigate errors through the PostHog MCP server.",
+        "developerName": "PostHog",
+        "category": "Developer tools",
+        "websiteUrl": "https://posthog.com/docs/model-context-protocol",
+        "composerIcon": "./com.youmind/icon.svg",
+        "logo": "./com.youmind/icon.svg"
+      }
     }
   }
 }

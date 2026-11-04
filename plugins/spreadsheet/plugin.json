@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "spreadsheet",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Create, edit, analyze, and format Excel (.xlsx), CSV, and TSV spreadsheets, with formula-aware workflows and visual review.",
   "author": {
     "name": "OpenAI"
@@ -14,6 +14,18 @@
       "displayName": "Spreadsheet",
       "category": "Documents",
       "icon": "./com.youmind/icon.svg"
+    },
+    "com.openai": {
+      "interface": {
+        "displayName": "Spreadsheet",
+        "shortDescription": "Create, edit, analyze, and format Excel (.xlsx), CSV, and TSV spreadsheets, with formula-aware workflows and visual review.",
+        "longDescription": "Create, edit, analyze, and format Excel (.xlsx), CSV, and TSV spreadsheets, with formula-aware workflows and visual review.",
+        "developerName": "OpenAI",
+        "category": "Documents",
+        "websiteUrl": "https://github.com/openai/skills/tree/e6afb0d74cc75d220df2faf3dd6c635c2dc6a108/skills/.curated/spreadsheet",
+        "composerIcon": "./com.youmind/icon.svg",
+        "logo": "./com.youmind/icon.svg"
+      }
     }
   }
 }

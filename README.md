@@ -17,6 +17,8 @@ plugins/<name>/
 
 See each plugin's `plugin.json` for its description, version, and upstream links, and `mcp.json` for its server configuration. Compatible clients can load these folders using the agent-plugins.org format.
 
+Codex reads the repository through `.agents/plugins/marketplace.json` and each plugin's `extensions."com.openai"` block. Both are generated from `plugin.json`: after changing a plugin, run `python3 -I scripts/gen_codex_marketplace.py .` and commit the result. `--check` fails when they are stale.
+
 ## Contributing
 
 - Follow the [plugin schema](https://agent-plugins.org/schemas/1.0.0/plugin.schema.json) and [MCP schema](https://agent-plugins.org/schemas/1.0.0/mcp.schema.json). The plugin's `name` must match its folder name.
