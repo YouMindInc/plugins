@@ -1,12 +1,12 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "gmail",
-  "version": "1.0.2",
-  "description": "Search and read Gmail threads, manage labels, and draft replies through the Gmail MCP server.",
+  "version": "1.0.3",
+  "description": "Search and read Gmail threads, and draft or send emails after your confirmation, through YouMind's Gmail MCP server.",
   "author": {
-    "name": "Google"
+    "name": "YouMind"
   },
-  "homepage": "https://developers.google.com/workspace/gmail/api/reference/mcp",
+  "homepage": "https://youmind.com",
   "extensions": {
     "com.youmind": {
       "displayName": "Gmail",
@@ -16,11 +16,11 @@
     "com.openai": {
       "interface": {
         "displayName": "Gmail",
-        "shortDescription": "Search and read Gmail threads, manage labels, and draft replies through the Gmail MCP server.",
-        "longDescription": "Search and read Gmail threads, manage labels, and draft replies through the Gmail MCP server.",
-        "developerName": "Google",
+        "shortDescription": "Search and read Gmail threads, and draft or send emails after your confirmation, through YouMind's Gmail MCP server.",
+        "longDescription": "Search and read Gmail threads, and draft or send emails after your confirmation, through YouMind's Gmail MCP server.",
+        "developerName": "YouMind",
         "category": "Productivity",
-        "websiteUrl": "https://developers.google.com/workspace/gmail/api/reference/mcp",
+        "websiteUrl": "https://youmind.com",
         "composerIcon": "./com.youmind/icon.svg",
         "logo": "./com.youmind/icon.svg"
       }
